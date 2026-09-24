@@ -14,6 +14,8 @@ The `superbooks` MCP server has two tools. Everything below goes through them.
 - `search_tools`: lists the operations this connection can reach as `declare function external_<name>(...)` signatures. Call it first, for example with the queries `invoice`, `customer`, `tracker`, to get the exact input shapes.
 - `execute_typescript`: runs a short program calling those `external_*` functions, which are already in scope; never import or redeclare them. The program must `return` its result.
 
+If the connection lists the operations by name instead (the per-tool surface), call them directly without the `external_` prefix.
+
 Operations this skill uses:
 
 - `external_customers_list` and `external_customers_get`: find the customer and their billing details.

@@ -11,6 +11,8 @@ Work through transactions that need a category or status, and connect receipts t
 
 The `superbooks` MCP server has two tools: `search_tools` (call it first, for example with `transaction`, `categor`, `inbox`, to get the exact input shapes) and `execute_typescript` (run a short program calling the declared `external_*` functions; the program must `return` its result).
 
+If the connection lists the operations by name instead (the per-tool surface), call them directly without the `external_` prefix.
+
 Operations this skill uses:
 
 - `external_transactions_list`: transactions for a period (for example `from: "2026-09-01"`), with amount, merchant and `category_slug`.

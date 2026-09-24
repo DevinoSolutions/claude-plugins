@@ -9,6 +9,8 @@ Report which of the team's domain connections are healthy, which are broken, and
 
 ## Tools you will use
 
+The `dodomain` server either lists these tools by name or, in Code Mode, lists only `search_tools` and `execute_typescript`. In Code Mode, call `search_tools` first, then call each tool below inside `execute_typescript` as `external_<name>` (for example `external_list_apps`); the program must `return` its result. A tool whose scope was not granted is absent either way: not listed, and not returned by `search_tools`.
+
 - `list_apps`: app ids and names, so connections can be grouped by app.
 - `list_connections`: connections with `status`, `fqdn`, and the `verifiedAt`, `lastCheckedAt`, and `brokenAt` timestamps. Filter by app or domain. Paginated.
 - `reverify_connection`: queue an on-demand DNS recheck of one connection. Returns `{ accepted: true }`; the check runs asynchronously and does not return a verdict.

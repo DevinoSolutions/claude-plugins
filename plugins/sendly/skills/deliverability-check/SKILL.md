@@ -9,6 +9,8 @@ Find out why mail from a domain is not landing, walk the user through the fix, a
 
 ## Tools you will use
 
+The `sendly` server either lists these tools by name or, in Code Mode, lists only `search_tools` and `execute_typescript`. In Code Mode, call `search_tools` first, then call each tool below inside `execute_typescript` as `external_<name>` (for example `external_check_domain`); the program must `return` its result. A tool whose scope was not granted is absent either way: not listed, and not returned by `search_tools`.
+
 - `check_domain`: the project's sending domains with DKIM, SPF, and DMARC status.
 - `diagnose_delivery`: an explanation of a domain's delivery health from its DNS state plus recent bounces and suppressions.
 - `add_domain`, `start_domain_setup`, `verify_domain`: add a sending domain, get the DNS records to publish, and check them.

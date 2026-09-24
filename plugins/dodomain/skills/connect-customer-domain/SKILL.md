@@ -9,6 +9,8 @@ Walk one domain from a new connect session to verified DNS. Creating a session u
 
 ## Tools you will use
 
+The `dodomain` server either lists these tools by name or, in Code Mode, lists only `search_tools` and `execute_typescript`. In Code Mode, call `search_tools` first, then call each tool below inside `execute_typescript` as `external_<name>` (for example `external_list_apps`); the program must `return` its result. A tool whose scope was not granted is absent either way: not listed, and not returned by `search_tools`.
+
 - `list_apps`: the apps on the team with id, name, public widget key, and sandbox flag. Never returns secret keys.
 - `check_domain`: provider, zone, and connect tier for the domain, as a pre-flight.
 - `create_connect_session`: start a session for a domain on an app. Takes the `appId`, the customer's `domain`, and the DNS records the app needs; returns a `sessionToken` and the records to apply. Counts against the monthly connection quota.

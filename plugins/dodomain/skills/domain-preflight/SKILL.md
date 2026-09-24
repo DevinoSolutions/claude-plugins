@@ -9,6 +9,8 @@ Tell the user what connecting a domain will involve before a connect session is 
 
 ## Tools you will use
 
+The `dodomain` server either lists these tools by name or, in Code Mode, lists only `search_tools` and `execute_typescript`. In Code Mode, call `search_tools` first, then call each tool below inside `execute_typescript` as `external_<name>` (for example `external_check_domain`); the program must `return` its result. A tool whose scope was not granted is absent either way: not listed, and not returned by `search_tools`.
+
 - `check_domain`: the DNS provider managing the domain, the registrable zone, the connect tier it qualifies for (1 one-click OAuth, 2 Domain Connect, 3 guided manual), detection confidence, nameservers, and a provider-specific setup guide.
 - `list_connections`: existing connections on the team, filterable by domain. Use it to see whether the domain is already connected.
 

@@ -11,6 +11,8 @@ Give the user a clear picture of receivables: what is open, what is overdue, and
 
 The `superbooks` MCP server has two tools: `search_tools` (call it first, for example with `invoice`, to get the exact input shapes) and `execute_typescript` (run a short program calling the declared `external_*` functions; the program must `return` its result).
 
+If the connection lists the operations by name instead (the per-tool surface), call them directly without the `external_` prefix.
+
 Operations this skill uses:
 
 - `external_invoices_list`: invoices filtered by status (for example `unpaid`), with amounts and due dates.

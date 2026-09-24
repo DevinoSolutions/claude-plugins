@@ -9,6 +9,8 @@ Read the workspace's delivery analytics and turn them into a short, honest repor
 
 ## Tools you will use
 
+The `postify` server either lists these tools by name or, in Code Mode, lists only `search_tools` and `execute_typescript`. In Code Mode, call `search_tools` first, then call each tool below inside `execute_typescript` as `external_<name>` (for example `external_get_analytics`); the program must `return` its result. A tool whose scope was not granted is absent either way: not listed, and not returned by `search_tools`.
+
 - `get_analytics` — workspace analytics for delivered posts: post counts, delivery rate, per-channel stats, for a date range.
 - `suggest_optimal_time` — suggested posting times per platform from the workspace's own publish history. No model call, no external data.
 - `list_posts` — to name the specific posts behind a number when the user asks "which ones".

@@ -18,7 +18,8 @@ never registered for the session.
 
 ## What it connects
 
-Remote MCP server `https://app.sendly.now/api/mcp` (OAuth 2.1 with PKCE). Tools, by area:
+Remote MCP server `https://app.sendly.now/api/mcp` (OAuth 2.1 with PKCE). It reaches 80 tools,
+each registered only when you granted its scope. By area:
 
 - Projects and usage: `list_projects`, `get_project`, `create_project`, `get_usage`
 - Contacts: `list_contacts`, `get_contact`, `create_contact`, `update_contact`, `delete_contact`
@@ -50,6 +51,19 @@ Remote MCP server `https://app.sendly.now/api/mcp` (OAuth 2.1 with PKCE). Tools,
 nothing; only a second call with `confirm: true` sends. Test sends reach only your own verified
 address. Mail leaves only from domains you verified, within your project's daily and monthly
 caps. Address validation and list cleaning are metered on your Sendly plan.
+
+Gates: each area has its own read and write scope (for example `contacts:read` and
+`contacts:write`), and sending needs `emails:send`, `campaigns:send`, or `mailboxes:send`.
+`list_projects` needs no scope. Workflow, suppression, sending, mailbox, project-creation and
+API-key scopes are sensitive: they start unticked on the consent screen. Seven account tools
+(`create_project`, `create_mailbox`, `delete_mailbox`, `list_api_keys`, `create_api_key`,
+`rotate_api_key`, `revoke_api_key`) are offered only to a person's OAuth connection, never to
+a Sendly API key, which sees 73.
+
+By default the server runs in Code Mode: `tools/list` shows two tools, `search_tools` and
+`execute_typescript`, and the tools above are called inside `execute_typescript` as
+`external_<name>` functions (for example `external_list_contacts`) with the same scopes and
+gates. A server set to the per-tool surface lists them by name instead. The skills handle both.
 
 ## Skills
 

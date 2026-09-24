@@ -9,6 +9,8 @@ Read Sendly's analytics and delivery history and turn them into a short, honest 
 
 ## Tools you will use
 
+The `sendly` server either lists these tools by name or, in Code Mode, lists only `search_tools` and `execute_typescript`. In Code Mode, call `search_tools` first, then call each tool below inside `execute_typescript` as `external_<name>` (for example `external_view_analytics`); the program must `return` its result. A tool whose scope was not granted is absent either way: not listed, and not returned by `search_tools`.
+
 - `view_analytics`: sent, delivered, opened, and bounced counts for a time window.
 - `list_emails`: individual emails with status. Use it to name the emails behind a number.
 - `get_email`: one email's delivery history (for example queued, then sent).

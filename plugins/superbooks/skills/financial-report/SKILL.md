@@ -11,6 +11,8 @@ Read the team's reports and turn them into a short, honest summary in the team c
 
 The `superbooks` MCP server has two tools: `search_tools` (call it first with the query `reports` to get every report's exact input shape) and `execute_typescript` (run a short program calling the declared `external_*` functions; the program must `return` its result).
 
+If the connection lists the operations by name instead (the per-tool surface), call them directly without the `external_` prefix.
+
 Operations this skill uses:
 
 - `external_reports_profit_loss`: revenue, expenses and the difference per month, with totals.

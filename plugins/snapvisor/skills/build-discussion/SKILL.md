@@ -11,6 +11,8 @@ Summarize who said what on a build and act on the threads for the user. Comments
 
 The `snapvisor` MCP server has two tools: `search_tools` (call it first, for example with `comment`, to get the exact operation names and inputs) and `execute_typescript` (run a short program calling the declared `external_*` functions; the program must `return` its result).
 
+If the connection lists the operations by name instead (the per-tool surface), call them directly without the `external_` prefix.
+
 Operations this skill uses for builds (tests and media have matching `Test` and `Media` variants, such as `external_listTestComments`):
 
 - `external_listBuildComments`: all comments and threads on a build.

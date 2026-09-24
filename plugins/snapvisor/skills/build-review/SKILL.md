@@ -14,6 +14,8 @@ The `snapvisor` MCP server has two tools. Everything below goes through them.
 - `search_tools`: find the operations you need and their exact input shape. Call it before your first `execute_typescript`, for example with the queries `build`, `diff`, `review`.
 - `execute_typescript`: run a short program that calls the `external_*` functions `search_tools` declared. They are already in scope; never import or redeclare them. The program must `return` its result.
 
+If the connection lists the operations by name instead (the per-tool surface), call them directly without the `external_` prefix.
+
 Operations this skill uses (confirm names and inputs with `search_tools`):
 
 - `external_getMe`: the signed-in user and the accounts (with `slug`) this connection can reach.

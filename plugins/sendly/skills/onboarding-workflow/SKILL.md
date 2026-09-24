@@ -9,6 +9,8 @@ Turn a plain-language brief into a multi-step workflow, and explain or fix exist
 
 ## Tools you will use
 
+The `sendly` server either lists these tools by name or, in Code Mode, lists only `search_tools` and `execute_typescript`. In Code Mode, call `search_tools` first, then call each tool below inside `execute_typescript` as `external_<name>` (for example `external_list_workflows`); the program must `return` its result. A tool whose scope was not granted is absent either way: not listed, and not returned by `search_tools`.
+
 - `list_workflows`, `get_workflow`: existing workflows and their full definition (trigger and steps).
 - `get_workflow_status`: whether a workflow is enabled, its step count, and its execution count.
 - `list_workflow_executions`: individual runs, to see where contacts stopped.

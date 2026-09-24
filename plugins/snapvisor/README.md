@@ -33,6 +33,9 @@ team domains, the media library, and account analytics. Builds and screenshots a
 your CI with project tokens; those endpoints are not on this surface, so Claude can read and
 review screenshots but cannot capture, upload or change one.
 
+Code Mode is the server's default. A server set to the per-tool surface lists the 90 operations
+by name (the `operationId`, such as `listBuilds`) instead; the skills handle both.
+
 ## Skills
 
 | Skill | Use it when |

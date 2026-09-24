@@ -48,6 +48,9 @@ reachable only when the credential holds full access and a team admin turns on S
 `invoices_send` e-mails the invoice to the customer. No operation moves money: bank connections,
 payments and billing exist only in the app. Each credential is limited to 120 calls a minute.
 
+Code Mode is the server's default. A server set to the per-tool surface lists the operations
+above by name, without the `external_` prefix; the skills handle both.
+
 ## Skills
 
 | Skill | Use it when |

@@ -9,6 +9,8 @@ Go from an idea to a campaign in DRAFT, then to a test, then to a send. Sending 
 
 ## Tools you will use
 
+The `sendly` server either lists these tools by name or, in Code Mode, lists only `search_tools` and `execute_typescript`. In Code Mode, call `search_tools` first, then call each tool below inside `execute_typescript` as `external_<name>` (for example `external_list_segments`); the program must `return` its result. A tool whose scope was not granted is absent either way: not listed, and not returned by `search_tools`.
+
 - `list_segments`, `list_segment_contacts`, `list_lists`, `list_contacts`: find and size the audience.
 - `list_templates`, `get_template`: reuse the copy and layout of an existing template.
 - `create_campaign`: save a campaign in DRAFT. Needs `name`, `subject`, `body`, and `from`, even though the schema marks only the first two as required.

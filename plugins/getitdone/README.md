@@ -16,20 +16,25 @@ in the session.
 
 ## What it connects
 
-Remote MCP server `https://app.nowgetitdone.com/api/mcp` (OAuth 2.1 with PKCE). Operations:
-`list_workspaces`, `list_projects`, `list_tasks`, `get_task_details`,
-`get_task_video_context`, `create_task`, `update_task`, `complete_task_occurrence`,
-`link_task_dependency`, `archive_task`, `search_docs`.
+Remote MCP server `https://app.nowgetitdone.com/api/mcp` (OAuth 2.1 with PKCE). It reaches 11
+tools, each registered only when you granted its scope:
 
-By default the server uses Code Mode. The tool list shows two tools, `search_tools` and
-`execute_typescript`, and each operation above is called inside `execute_typescript` as
-`external_<operation>`, for example `external_list_tasks`. A server set to the full surface
-lists the eleven operations as tools of their own. The skills work with either.
+- Workspaces and docs (`workspaces:read`): `list_workspaces`, `search_docs`
+- Projects (`projects:read`): `list_projects`
+- Tasks (`tasks:read`): `list_tasks`, `get_task_details`, `get_task_video_context`
+- Task changes (`tasks:write`): `create_task`, `update_task`, `complete_task_occurrence`,
+  `link_task_dependency`, `archive_task`
 
-Six operations only read. The writes create, update, and archive tasks, mark one day of a
-repeating task done, and link or unlink task dependencies. Archive is the only removal and is
-reversible; nothing permanently deletes a task. Attachment and video-frame URLs are
-short-lived presigned links to your own files.
+Six tools only read. The five writes create and update tasks, mark one day of a repeating task
+done, add or remove a "blocked by" link, and archive tasks. Archive is the only removal and is
+reversible in the web app; nothing permanently deletes a task. Attachment and video-frame URLs
+are short-lived presigned links to your own files.
+
+By default the server runs in Code Mode: `tools/list` shows two tools, `search_tools` and
+`execute_typescript`, and the tools above are called inside `execute_typescript` as
+`external_<name>` functions (for example `external_list_tasks`) with the same scopes and gates. A
+server set to the per-tool surface lists them by name instead. The skills handle both. In Code Mode,
+`get_task_video_context` returns its text summary but not the frame images.
 
 ## Skills
 

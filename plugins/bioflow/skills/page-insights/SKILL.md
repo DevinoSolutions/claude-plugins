@@ -9,6 +9,8 @@ Read the workspace's analytics, captured leads, and uploaded files, and turn the
 
 ## Tools you will use
 
+The `bioflow` server either lists these tools by name or, in Code Mode, lists only `search_tools` and `execute_typescript`. In Code Mode, call `search_tools` first, then call each tool below inside `execute_typescript` as `external_` plus the name with dots swapped for underscores (for example `external_analytics_summary` for `analytics.summary`); the program must `return` its result. A tool whose scope was not granted is absent either way: not listed, and not returned by `search_tools`.
+
 - `analytics.summary`: aggregated views, clicks, CTR, top links, referrers, and tip revenue for the workspace.
 - `contacts.list`: the leads the page has captured, with how each was captured (for example a newsletter signup or a file gate).
 - `file.list`: the files uploaded to the account.

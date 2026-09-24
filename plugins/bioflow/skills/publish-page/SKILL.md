@@ -9,6 +9,8 @@ Take the draft live, now or at a set time, through BioFlow's two-step publish. T
 
 ## Tools you will use
 
+The `bioflow` server either lists these tools by name or, in Code Mode, lists only `search_tools` and `execute_typescript`. In Code Mode, call `search_tools` first, then call each tool below inside `execute_typescript` as `external_` plus the name with dots swapped for underscores (for example `external_page_list` for `page.list`); the program must `return` its result. A tool whose scope was not granted is absent either way: not listed, and not returned by `search_tools`.
+
 - `page.list`: find the page and its public URL.
 - `page.get`: the draft and published summaries, so you can describe what differs.
 - `page.publish`: publish the draft now. Two-step: a call without `confirmToken` returns a preview of exactly what would go live plus a short-lived `confirmToken` and publishes nothing; a second call carrying that token commits.

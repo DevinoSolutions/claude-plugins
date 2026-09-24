@@ -11,6 +11,8 @@ Turn the account's analytics and membership into a short, factual report.
 
 The `snapvisor` MCP server has two tools: `search_tools` (call it first, for example with `analytics`, `member`, `project`) and `execute_typescript` (run a short program calling the declared `external_*` functions; the program must `return` its result).
 
+If the connection lists the operations by name instead (the per-tool surface), call them directly without the `external_` prefix.
+
 Operations this skill uses (confirm with `search_tools`):
 
 - `external_getMe`: the accounts this connection can reach, with their `slug` and whether MCP access is included.

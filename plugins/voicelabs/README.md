@@ -22,8 +22,11 @@ registration). Tools:
 - `speak`, `transcribe`, `ensure_voice_profile` (scope `voice:generate`)
 - `clone_voice_profile` (scope `voice:clone`, a separate consent question; only offered when you
   grant it)
-- `search_tools` and `execute_typescript`: run several of the operations above in one round trip.
-  Each call enforces the same scopes and argument rules as calling the tool directly.
+- `search_tools` and `execute_typescript` (no scope): run several of the operations above in one
+  round trip. Each call enforces the same scopes and argument rules as calling the tool directly.
+
+The server lists the direct tools and the Code Mode pair side by side: 9 tools with every scope,
+8 without `voice:clone`, 5 with `voice:read` alone.
 
 `speak` is asynchronous: it returns a generation id, and `get_generation` returns the audio link
 once the generation completes. Audio links are signed for your account and expire after about

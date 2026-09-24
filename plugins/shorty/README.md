@@ -16,15 +16,17 @@ not grant is never registered for the session.
 ## What it connects
 
 Remote MCP server `https://aishorty.com/api/mcp` (OAuth 2.1 with PKCE). The host is the apex
-domain, not an `app.` subdomain. Operations:
-`search_articles`, `list_recent_articles`, `get_article`, `list_transcriptions`,
-`get_transcription`, `get_usage_quota`, `get_job_status`, `search_docs`,
-`create_youtube_summary`, `create_content_summary`, `create_transcription`, `create_subtitles`.
+domain, not an `app.` subdomain. It reaches 12 tools, each registered only when you granted its
+scope:
 
-The server's default surface is Code Mode: `tools/list` shows two tools, `search_tools` and
-`execute_typescript`, and each operation above is called as `external_<name>` inside an
-`execute_typescript` program with the same scope, consent, and audit checks. When the server
-runs its full surface instead, each operation is its own tool. The skills handle both.
+- Library (`articles:read`): `search_articles`, `list_recent_articles`, `get_article`
+- Transcriptions (`transcriptions:read`): `list_transcriptions`, `get_transcription`
+- Usage (`usage:read`): `get_usage_quota`
+- Jobs (`jobs:read`): `get_job_status`
+- Docs (`docs:read`): `search_docs`
+- Summaries (`articles:write`, plan quota): `create_youtube_summary`, `create_content_summary`
+- Transcripts and subtitles (`transcriptions:write`, plan quota; some subtitle styles need a
+  higher plan): `create_transcription`, `create_subtitles`
 
 The four `create_*` tools start queued jobs that take seconds to minutes, fetch the URL you
 supply from the open internet, and count against your Shorty plan's quota. Each returns a job
@@ -32,6 +34,11 @@ id, and Claude polls `get_job_status` until the job reaches `SUCCESS`, `ERROR`, 
 Over this connector Shorty returns job handles and text, never a media file; subtitle files are
 downloaded from the Shorty app. No tool deletes or overwrites existing work, and a retried
 request does not create a duplicate job.
+
+By default the server runs in Code Mode: `tools/list` shows two tools, `search_tools` and
+`execute_typescript`, and the tools above are called inside `execute_typescript` as
+`external_<name>` functions (for example `external_search_articles`) with the same scopes and gates. A
+server set to the per-tool surface lists them by name instead. The skills handle both.
 
 Consent is re-checked on every tool call, so revoking Shorty under Settings > Connected AI Apps
 stops the next call.

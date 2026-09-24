@@ -10,6 +10,8 @@ flaky changes, and run the review discussion.
 /plugin install snapvisor@devino
 ```
 
+Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-snapvisor`, or the connector alone through the [Connectors Directory listing](https://claude.ai/directory/connectors/snapvisor). See the [repository README](../../README.md#install) for each path.
+
 Then ask Claude about your builds. On the first tool call Claude opens the SnapVisor consent
 screen; choose the accounts the connection covers and narrow the scopes if you do not want write
 or admin access. MCP access is part of the SnapVisor Pro plan. On the Free plan only `getMe`
@@ -40,10 +42,11 @@ by name (the `operationId`, such as `listBuilds`) instead; the skills handle bot
 
 | Skill | Use it when |
 |---|---|
-| `build-review` | "What changed in the latest build?", "Approve build 42, the nav restyle is intentional" |
-| `flaky-changes` | "Ignore the date-widget change, it's the flaky clock again", "Which tests are flaky?" |
-| `build-discussion` | "Summarize the comments on build 42", "Reply to the open thread and resolve it" |
-| `usage-report` | "How many builds did we run this month?", "Who is on the team?" |
+| `reviewing-visual-builds` | "What changed in the latest build?", "Approve build 42, the nav restyle is intentional" |
+| `handling-flaky-changes` | "Ignore the date-widget change, it's the flaky clock again", "Which tests are flaky?" |
+| `discussing-builds` | "Summarize the comments on build 42", "Reply to the open thread and resolve it" |
+| `reporting-snapvisor-usage` | "How many builds did we run this month?", "Who is on the team?" |
+| `setup-snapvisor` | "Connect SnapVisor to Claude", "SnapVisor tools are missing", "Tool not found" |
 
 ## Links
 

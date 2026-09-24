@@ -1,15 +1,33 @@
 {
   "name": "postify",
-  "version": "1.0.0",
-  "description": "Draft, schedule, and publish social posts from your Postify calendar. Wraps the Postify MCP connector with skills for the content calendar, drafting, and performance review.",
+  "displayName": "Postify",
+  "version": "1.1.0",
+  "description": "Plan, draft, and schedule social media posts from Claude with Postify: review your content calendar, write LinkedIn, X, Instagram, Facebook, and TikTok drafts, reschedule posts, and report what performed.",
   "author": {
     "name": "Devino Solutions",
-    "email": "support@devino.ca"
+    "email": "support@devino.ca",
+    "url": "https://devino.ca"
   },
   "homepage": "https://usepostify.com/docs/connecting-ai-assistants",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",
   "license": "MIT",
-  "keywords": ["social media", "scheduling", "marketing", "content calendar", "mcp"],
+  "keywords": [
+    "postify",
+    "post ify",
+    "social media",
+    "social media scheduler",
+    "schedule posts",
+    "content calendar",
+    "draft linkedin post",
+    "write a tweet",
+    "instagram caption",
+    "social media planner",
+    "posting schedule",
+    "best time to post",
+    "social media analytics",
+    "marketing",
+    "mcp"
+  ],
   "skills": "./skills",
   "mcpServers": {
     "postify": {

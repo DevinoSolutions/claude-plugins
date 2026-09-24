@@ -1,15 +1,34 @@
 {
   "name": "sendly",
-  "version": "1.0.0",
-  "description": "Run your Sendly email workspace: contacts, campaigns, workflows, deliverability, and analytics. Wraps the Sendly MCP connector with skills for confirmed campaign sends, email performance, deliverability checks, and onboarding workflows.",
+  "displayName": "Sendly",
+  "version": "1.1.0",
+  "description": "Run email from Claude with Sendly: draft and send campaigns after confirming the recipient count, report opens and bounces, fix deliverability and DKIM, SPF, and DMARC records, and build onboarding workflows.",
   "author": {
     "name": "Devino Solutions",
-    "email": "support@devino.ca"
+    "email": "support@devino.ca",
+    "url": "https://devino.ca"
   },
   "homepage": "https://docs.sendly.now/guides/mcp",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",
   "license": "MIT",
-  "keywords": ["email", "email marketing", "campaigns", "deliverability", "mcp"],
+  "keywords": [
+    "sendly",
+    "sendley",
+    "send ly",
+    "email marketing",
+    "email campaigns",
+    "newsletter",
+    "send campaign",
+    "email deliverability",
+    "emails going to spam",
+    "dkim spf dmarc",
+    "email analytics",
+    "bounce rate",
+    "welcome series",
+    "drip campaign",
+    "transactional email",
+    "mcp"
+  ],
   "skills": "./skills",
   "mcpServers": {
     "sendly": {

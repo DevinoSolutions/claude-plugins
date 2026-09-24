@@ -11,6 +11,8 @@ This plugin can send real email. Every skill that sends asks you first.
 /plugin install sendly@devino
 ```
 
+Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-sendly`, or the connector alone through the [Connectors Directory listing](https://claude.ai/directory/connectors/sendly). See the [repository README](../../README.md#install) for each path.
+
 Then ask Claude about your contacts, campaigns, or deliverability. On the first tool call Claude
 opens the Sendly sign-in page. On the consent screen read scopes are pre-selected, and sending
 and destructive scopes are unchecked behind a warning. A tool whose scope you did not grant is
@@ -69,10 +71,11 @@ gates. A server set to the per-tool surface lists them by name instead. The skil
 
 | Skill | Use it when |
 |---|---|
-| `draft-and-send-campaign` | "Draft a September newsletter for premium members", "Send a test", "Send it" |
-| `email-performance` | "How did my emails do this week?", "Did anything bounce?" |
-| `deliverability-check` | "Why is mail from my domain not landing?", "Clean this list before I send" |
-| `onboarding-workflow` | "Build a welcome series for new signups", "Why isn't my onboarding workflow running?" |
+| `sending-email-campaigns` | "Draft a September newsletter for premium members", "Send a test", "Send it" |
+| `reviewing-email-performance` | "How did my emails do this week?", "Did anything bounce?" |
+| `checking-email-deliverability` | "Why is mail from my domain not landing?", "Clean this list before I send" |
+| `building-onboarding-workflows` | "Build a welcome series for new signups", "Why isn't my onboarding workflow running?" |
+| `setup-sendly` | "Connect Sendly to Claude", "Sendly tools are missing", "Tool not found" |
 
 ## Links
 

@@ -9,6 +9,8 @@ Edit, publish, and measure your BioFlow link-in-bio pages.
 /plugin install bioflow@devino
 ```
 
+Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-bioflow`, or the connector alone through the [Connectors Directory listing](https://claude.ai/directory/connectors/bioflow). See the [repository README](../../README.md#install) for each path.
+
 Then ask Claude about your page. On the first tool call Claude opens the BioFlow sign-in page;
 pick the scopes you want on the consent screen. A tool whose scope you did not grant is never
 registered for the session.
@@ -43,9 +45,10 @@ lists them by name instead. The skills handle both.
 
 | Skill | Use it when |
 |---|---|
-| `edit-page-draft` | "Add a link to my YouTube channel", "Rename my page title", "Move the newsletter block to the top" |
-| `publish-page` | "Publish my page", "Schedule my page to go live Monday at 9am" |
-| `page-insights` | "How did my page do last month?", "Who signed up through my page?" |
+| `editing-page-drafts` | "Add a link to my YouTube channel", "Rename my page title", "Move the newsletter block to the top" |
+| `publishing-pages` | "Publish my page", "Schedule my page to go live Monday at 9am" |
+| `analyzing-page-performance` | "How did my page do last month?", "Who signed up through my page?" |
+| `setup-bioflow` | "Connect BioFlow to Claude", "BioFlow tools are missing", "Tool not found" |
 
 ## Links
 

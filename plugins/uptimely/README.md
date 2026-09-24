@@ -10,6 +10,8 @@ response with confirmation.
 /plugin install uptimely@devino
 ```
 
+Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-uptimely`, or the connector alone through the [Connectors Directory listing](https://claude.ai/directory/connectors/uptimely). See the [repository README](../../README.md#install) for each path.
+
 Then ask Claude about a project. On the first tool call Claude opens the Uptimely sign-in page;
 pick the scopes you want on the consent screen. A tool whose scope you did not grant is never
 registered for the session.
@@ -53,10 +55,11 @@ Review and revoke connected assistants under Connected AI apps in your Uptimely 
 
 | Skill | Use it when |
 |---|---|
-| `status-check` | "Is anything down?", "Who is on call?", "How did the checkout monitor do this week?" |
-| `incident-response` | "Declare an incident for the checkout API", "Acknowledge that alert", "Check the landing page now" |
-| `postmortem` | "Write up the postmortem for yesterday's outage" |
-| `add-monitor` | "Start monitoring https://api.example.com/health" |
+| `checking-uptime-status` | "Is anything down?", "Who is on call?", "How did the checkout monitor do this week?" |
+| `responding-to-incidents` | "Declare an incident for the checkout API", "Acknowledge that alert", "Check the landing page now" |
+| `writing-postmortems` | "Write up the postmortem for yesterday's outage" |
+| `adding-uptime-monitors` | "Start monitoring https://api.example.com/health" |
+| `setup-uptimely` | "Connect Uptimely to Claude", "Uptimely tools are missing", "Tool not found" |
 
 ## Links
 

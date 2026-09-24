@@ -9,6 +9,8 @@ Summarize and transcribe videos, audio, documents, and web pages, and read your 
 /plugin install shorty@devino
 ```
 
+Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-shorty`, or the connector alone through the [Connectors Directory listing](https://claude.ai/directory/connectors/shorty). See the [repository README](../../README.md#install) for each path.
+
 Then ask Claude about your summaries or give it a link. On the first tool call Claude opens the
 Shorty sign-in page; pick the scopes you want on the consent screen. A tool whose scope you did
 not grant is never registered for the session.
@@ -47,9 +49,10 @@ stops the next call.
 
 | Skill | Use it when |
 |---|---|
-| `summarize-source` | "Summarize this YouTube video", "Summarize this article for me", "Turn these notes into a summary" |
-| `transcribe-media` | "Transcribe this podcast episode", "Add captions to this clip" |
-| `library-research` | "What did I summarize this week?", "Find my notes about pricing", "How much quota is left?" |
+| `summarizing-sources` | "Summarize this YouTube video", "Summarize this article for me", "Turn these notes into a summary" |
+| `transcribing-media` | "Transcribe this podcast episode", "Add captions to this clip" |
+| `researching-summary-library` | "What did I summarize this week?", "Find my notes about pricing", "How much quota is left?" |
+| `setup-shorty` | "Connect Shorty to Claude", "Shorty tools are missing", "Tool not found" |
 
 ## Links
 

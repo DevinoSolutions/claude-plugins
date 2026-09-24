@@ -10,6 +10,8 @@ and match receipts, and read profit and loss, burn rate and runway.
 /plugin install superbooks@devino
 ```
 
+Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-superbooks`, or the connector alone through the [Connectors Directory listing](https://claude.ai/directory/connectors/superbooks). See the [repository README](../../README.md#install) for each path.
+
 Then ask Claude about your books. On the first tool call Claude opens the SuperBooks sign-in
 page; approve the scopes you want on the consent screen. An operation whose scope you did not
 grant is never reachable. Works on every SuperBooks plan.
@@ -55,10 +57,11 @@ above by name, without the `external_` prefix; the skills handle both.
 
 | Skill | Use it when |
 |---|---|
-| `draft-invoice` | "Invoice Cedar Valley Books for 6 hours of design at $125", "Bill my September hours on Harbor & Pine" |
-| `unpaid-invoices` | "Which invoices are unpaid?", "Who owes me the most?" |
-| `bookkeeping-cleanup` | "Categorize last month's transactions", "Match the receipts in my inbox" |
-| `financial-report` | "How did June to September go?", "What's my runway?" |
+| `drafting-invoices` | "Invoice Cedar Valley Books for 6 hours of design at $125", "Bill my September hours on Harbor & Pine" |
+| `chasing-unpaid-invoices` | "Which invoices are unpaid?", "Who owes me the most?" |
+| `cleaning-up-bookkeeping` | "Categorize last month's transactions", "Match the receipts in my inbox" |
+| `reading-financial-reports` | "How did June to September go?", "What's my runway?" |
+| `setup-superbooks` | "Connect SuperBooks to Claude", "SuperBooks tools are missing", "Tool not found" |
 
 ## Links
 

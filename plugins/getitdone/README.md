@@ -9,6 +9,8 @@ Review, create, and update tasks in your GetItDone workspaces.
 /plugin install getitdone@devino
 ```
 
+Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-getitdone`, or the connector alone through the [Connectors Directory listing](https://claude.ai/directory/connectors/getitdone). See the [repository README](../../README.md#install) for each path.
+
 Then ask Claude about your tasks. On the first tool call Claude opens the GetItDone sign-in
 page; pick the scopes you want on the consent screen (`workspaces:read`, `projects:read`,
 `tasks:read`, `tasks:write`). An operation whose scope you did not grant is never reachable
@@ -40,10 +42,11 @@ server set to the per-tool surface lists them by name instead. The skills handle
 
 | Skill | Use it when |
 |---|---|
-| `workload-review` | "What's on my plate this week?", "What's blocked right now?" |
-| `task-deep-dive` | "Open T-123, why can't it start?", "What does the screen recording on this task show?" |
-| `capture-tasks` | "Turn these meeting notes into tasks", "T-123 is waiting on T-120", "I did my workout yesterday" |
-| `developer-docs` | "What does the 429 problem code mean in the GetItDone API?" |
+| `reviewing-workload` | "What's on my plate this week?", "What's blocked right now?" |
+| `investigating-tasks` | "Open T-123, why can't it start?", "What does the screen recording on this task show?" |
+| `capturing-tasks` | "Turn these meeting notes into tasks", "T-123 is waiting on T-120", "I did my workout yesterday" |
+| `searching-getitdone-api-docs` | "What does the 429 problem code mean in the GetItDone API?" |
+| `setup-getitdone` | "Connect GetItDone to Claude", "GetItDone tools are missing", "Tool not found" |
 
 ## Links
 

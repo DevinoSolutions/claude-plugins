@@ -1,15 +1,33 @@
 {
   "name": "dodomain",
-  "version": "1.0.0",
-  "description": "Pre-flight, connect, and verify customer domains from your doDomain team. Wraps the doDomain MCP connector with skills for domain pre-flight checks, connect sessions, and connection health.",
+  "displayName": "doDomain",
+  "version": "1.1.0",
+  "description": "Connect customers' own domains to your apps from Claude with doDomain: find who runs DNS for a domain, start connect sessions with the exact DNS records, verify them, and find broken or drifted connections.",
   "author": {
     "name": "Devino Solutions",
-    "email": "support@devino.ca"
+    "email": "support@devino.ca",
+    "url": "https://devino.ca"
   },
   "homepage": "https://dodomain.io/docs/connecting-ai-assistants",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",
   "license": "MIT",
-  "keywords": ["domains", "dns", "custom domains", "domain connect", "mcp"],
+  "keywords": [
+    "dodomain",
+    "do domain",
+    "dodomains",
+    "custom domains",
+    "customer domains",
+    "connect domain",
+    "dns records",
+    "domain connect",
+    "one-click dns",
+    "white-label domain",
+    "dns provider lookup",
+    "verify domain",
+    "dns health",
+    "saas custom domain",
+    "mcp"
+  ],
   "skills": "./skills",
   "mcpServers": {
     "dodomain": {

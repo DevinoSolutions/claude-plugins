@@ -10,6 +10,8 @@ two-step confirmation.
 /plugin install notifly@devino
 ```
 
+Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-notifly`, or the connector alone through the [Connectors Directory listing](https://claude.ai/directory/connectors/notifly). See the [repository README](../../README.md#install) for each path.
+
 Then ask Claude about your notification setup. On the first tool call Claude opens the Notifly
 sign-in page. The consent screen lists the requested scopes and an environment picker
 (Development or Production); the connection acts on the environment you pick. A tool whose scope
@@ -46,9 +48,10 @@ Review and revoke connected assistants under Connected AI apps in your Notifly s
 
 | Skill | Use it when |
 |---|---|
-| `delivery-check` | "Did the welcome email go out to dana@example.com?", "Why didn't this subscriber get the reset email?" |
-| `send-notification` | "Send the order-confirmation workflow to subscriber wc-1020" |
-| `workflow-review` | "Which workflows do we have and on which channels?", "What topics exist?" |
+| `checking-notification-delivery` | "Did the welcome email go out to dana@example.com?", "Why didn't this subscriber get the reset email?" |
+| `sending-notifications` | "Send the order-confirmation workflow to subscriber wc-1020" |
+| `reviewing-notification-workflows` | "Which workflows do we have and on which channels?", "What topics exist?" |
+| `setup-notifly` | "Connect Notifly to Claude", "Notifly tools are missing", "Tool not found" |
 
 ## Links
 

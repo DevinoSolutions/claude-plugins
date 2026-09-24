@@ -9,6 +9,8 @@ Pre-flight, connect, and verify your customers' own domains from your doDomain t
 /plugin install dodomain@devino
 ```
 
+Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-dodomain`, or the connector alone through the [Connectors Directory listing](https://claude.ai/directory/connectors/dodomain). See the [repository README](../../README.md#install) for each path.
+
 Then ask Claude about a domain or your connections. On the first tool call Claude opens the
 doDomain sign-in page; pick the scopes you want on the consent screen. A tool whose scope you
 did not grant is never registered for the session.
@@ -40,9 +42,10 @@ server set to the per-tool surface lists them by name instead. The skills handle
 
 | Skill | Use it when |
 |---|---|
-| `domain-preflight` | "Who runs DNS for shop.acme.com?", "Can this domain do one-click connect?" |
-| `connect-customer-domain` | "Start a connect session for shop.acme.com on my app", "Have the records landed yet?" |
-| `connection-health` | "Which of my connected domains are broken?", "Recheck the DNS on this connection" |
+| `preflighting-domains` | "Who runs DNS for shop.acme.com?", "Can this domain do one-click connect?" |
+| `connecting-customer-domains` | "Start a connect session for shop.acme.com on my app", "Have the records landed yet?" |
+| `checking-domain-connections` | "Which of my connected domains are broken?", "Recheck the DNS on this connection" |
+| `setup-dodomain` | "Connect doDomain to Claude", "doDomain tools are missing", "Tool not found" |
 
 ## Links
 

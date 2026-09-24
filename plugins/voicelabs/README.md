@@ -9,6 +9,8 @@ Turn text into speech in your VoiceLabs voices and transcribe audio to text.
 /plugin install voicelabs@devino
 ```
 
+Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-voicelabs`, or the connector alone through a custom connector (Connectors Directory listing pending). See the [repository README](../../README.md#install) for each path.
+
 Then ask Claude to read something aloud or transcribe a clip. On the first tool call Claude opens
 the VoiceLabs consent screen; approve the scopes you want. A tool whose scope you did not grant
 is never offered. Disconnect at any time from https://app.voicelabs.now/connections.
@@ -37,9 +39,10 @@ preset voices. Generation is metered by your plan.
 
 | Skill | Use it when |
 |---|---|
-| `read-aloud` | "Read this paragraph in my Narrator voice", "Narrate these five sections" |
-| `transcribe-audio` | "Transcribe this clip", "What did I record yesterday?" |
-| `voice-library` | "What voices do I have?", "Add a built-in narrator voice" |
+| `reading-text-aloud` | "Read this paragraph in my Narrator voice", "Narrate these five sections" |
+| `transcribing-audio` | "Transcribe this clip", "What did I record yesterday?" |
+| `managing-voice-library` | "What voices do I have?", "Add a built-in narrator voice" |
+| `setup-voicelabs` | "Connect VoiceLabs to Claude", "VoiceLabs tools are missing", "Tool not found" |
 
 ## Links
 

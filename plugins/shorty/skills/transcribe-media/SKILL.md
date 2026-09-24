@@ -7,6 +7,10 @@ description: Transcribe an audio or video URL, or add subtitle tracks to a video
 
 Start a transcription or subtitle job on a publicly accessible media URL, follow it to a terminal state, and return the text.
 
+## Calling the tools
+
+The Shorty server's default surface lists two tools, `search_tools` and `execute_typescript`. Call `search_tools` for the declarations, then call each operation below as `external_<name>(...)` inside an `execute_typescript` program, for example `external_get_job_status({ jobId })`. A denied call throws an Error whose message starts with its code, such as `SCOPE_MISSING:`. If the operations are listed as individual tools instead, call them directly. The rules below apply on both surfaces.
+
 ## Tools you will use
 
 - `get_usage_quota`: plan tier, upload and duration limits, and remaining allowance.
@@ -29,6 +33,7 @@ Start a transcription or subtitle job on a publicly accessible media URL, follow
 ## Rules
 
 - Never call a create tool without the user's yes for that exact URL. Both tools fetch media from the open internet and consume quota.
+- In Code Mode, put only approved create calls in an `execute_typescript` program. Never add a create call to a program that reads data.
 - If `create_subtitles` returns `upgradeRequired: true`, nothing was started and nothing was charged. Explain that the requested style is not on their plan and offer the style that is (the free plan includes the CLEAN style). Do not promote a plan.
 - Never claim you produced or can send a media file. This connector returns job handles and text only.
 - There is no delete tool. Removing a transcription happens in the Shorty app.

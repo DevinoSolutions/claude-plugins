@@ -9,16 +9,16 @@ Find the right documents in the uNotes library, read them, and answer with the s
 
 ## Tools you will use
 
-- `list_schools_courses`: the schools or courses catalog (pass `type` as `schools` or `courses`), with ids, codes, and names. Use it to resolve a course code the user mentions.
-- `search_library`: search the shared library of completed public documents. Each hit has `id`, `name`, `type`, a course and school label, and a public `unotes.net` URL.
+- `list_schools_courses`: search the platform catalog of schools or courses (`type` is `schools` or `courses`, with an optional `query`, and `schoolId` to narrow courses to one school). Returns ids, codes, and names. It is the whole catalog, not only the courses the user follows.
+- `search_library`: search the shared library of completed public documents by `query` (title keywords), optionally narrowed by `courseId` or `schoolId`. Each hit has `id`, `name`, `type`, a course and school label, and a public `unotes.net` URL.
 - `get_document`: metadata for one document: name, type, year, season, language, professor, course, school, and URL.
 - `get_document_content`: the extracted text of one document, capped at 12,000 characters.
 
 ## Workflow
 
-1. If the user names a course or school, call `list_schools_courses` to confirm the exact course code and name, and use them in the search query.
-2. Call `search_library` with the topic plus the course code (for example "virtual memory CSI 3131"). Keep `limit` small, around 5.
-3. If nothing comes back, retry once with broader words or without the course code.
+1. If the user names a course, call `list_schools_courses` with `type: "courses"` and the course code as `query`, and take the matching course's id. Confirm with the user if several schools teach a course with that code.
+2. Call `search_library` with the topic as `query` and that id as `courseId` (for example `query: "virtual memory"`). `courseId` takes the id, never a course code; a course code goes in `query`. Keep `limit` small, around 5.
+3. If nothing comes back, retry once with broader words, then without `courseId`.
 4. Show the hits as a short list: name, type, course, and URL. Pick the one to three closest to the question, or ask the user to pick if the choice is unclear.
 5. For each chosen document, call `get_document` for context (year, professor), then `get_document_content` for the text.
 6. Answer the question in prose. Name the document each point came from and link its URL.

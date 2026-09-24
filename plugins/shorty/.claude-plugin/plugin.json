@@ -1,0 +1,20 @@
+{
+  "name": "shorty",
+  "version": "1.0.0",
+  "description": "Summarize and transcribe videos, audio, documents, and web pages with Shorty. Wraps the Shorty MCP connector with skills for summarizing a source, transcribing media, and researching your summary library.",
+  "author": {
+    "name": "Devino Solutions",
+    "email": "hello@devino.ca"
+  },
+  "homepage": "https://aishorty.com/docs/connecting-ai-assistants",
+  "repository": "https://github.com/DevinoSolutions/claude-plugins",
+  "license": "MIT",
+  "keywords": ["summarization", "transcription", "subtitles", "youtube", "research", "mcp"],
+  "skills": "./skills",
+  "mcpServers": {
+    "shorty": {
+      "type": "http",
+      "url": "https://aishorty.com/api/mcp"
+    }
+  }
+}

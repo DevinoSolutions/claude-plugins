@@ -23,6 +23,10 @@ connector's tools become available. Each plugin's README lists its tools and ski
 | `getitdone` | [GetItDone](https://nowgetitdone.com) team task and workspace manager | `https://app.nowgetitdone.com/api/mcp` |
 | `bioflow` | [BioFlow](https://getbioflow.com) link-in-bio pages | `https://app.getbioflow.com/api/mcp` |
 | `sendly` | [Sendly](https://sendly.now) email platform for product teams | `https://app.sendly.now/api/mcp` |
+| `shorty` | [Shorty](https://aishorty.com) summaries and transcripts of media and documents | `https://aishorty.com/api/mcp` |
+| `unotes` | [uNotes](https://unotes.net) study notes library | `https://unotes.net/api/mcp` |
+| `uptimely` | [Uptimely](https://getuptimely.com) uptime monitoring and incidents | `https://app.getuptimely.com/api/mcp` |
+| `notifly` | [Notifly](https://notifly.io) notification workflows | `https://api.notifly.io/mcp` |
 | `snapvisor` | [SnapVisor](https://snapvisor.io) visual regression testing | `https://mcp.snapvisor.io` |
 | `superbooks` | [SuperBooks](https://superbooks.io) bookkeeping and invoices | `https://api.superbooks.io/mcp` |
 | `voicelabs` | [VoiceLabs](https://voicelabs.now) text to speech and transcription | `https://app.voicelabs.now/api/mcp` |

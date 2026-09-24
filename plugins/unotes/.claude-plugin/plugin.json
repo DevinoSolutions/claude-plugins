@@ -1,0 +1,20 @@
+{
+  "name": "unotes",
+  "version": "1.0.0",
+  "description": "Read-only access to the uNotes study library and your own study data. Wraps the uNotes MCP connector with skills for researching course material, building a study guide from a document, and checking what to revise.",
+  "author": {
+    "name": "Devino Solutions",
+    "email": "support@unotes.net"
+  },
+  "homepage": "https://unotes.net/docs/connecting-ai-assistants",
+  "repository": "https://github.com/DevinoSolutions/claude-plugins",
+  "license": "MIT",
+  "keywords": ["study", "education", "flashcards", "quizzes", "course notes", "mcp"],
+  "skills": "./skills",
+  "mcpServers": {
+    "unotes": {
+      "type": "http",
+      "url": "https://unotes.net/api/mcp"
+    }
+  }
+}

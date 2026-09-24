@@ -40,6 +40,30 @@
       "category": "productivity"
     },
     {
+      "name": "shorty",
+      "source": "./plugins/shorty",
+      "description": "Summarize and transcribe videos, audio, documents, and web pages with Shorty.",
+      "category": "productivity"
+    },
+    {
+      "name": "unotes",
+      "source": "./plugins/unotes",
+      "description": "Search the uNotes study library and your own study data, read-only.",
+      "category": "productivity"
+    },
+    {
+      "name": "uptimely",
+      "source": "./plugins/uptimely",
+      "description": "Check monitors, incidents, alerts, and on-call in Uptimely, and run incident response with confirmation.",
+      "category": "development"
+    },
+    {
+      "name": "notifly",
+      "source": "./plugins/notifly",
+      "description": "Read Notifly workflows, subscribers, and delivery history, and send a workflow with two-step confirmation.",
+      "category": "development"
+    },
+    {
       "name": "snapvisor",
       "source": "./plugins/snapvisor",
       "description": "Review visual regression builds from SnapVisor: see what changed, approve or reject, and handle flaky changes.",

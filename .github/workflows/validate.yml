@@ -11,17 +11,26 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm install -g @anthropic-ai/claude-code
-      - name: Validate marketplace
-        run: claude plugin validate --strict .
-      - name: Validate every plugin
+      - name: Top-level skills/ mirror matches the plugin skills
+        run: node scripts/sync-skills.mjs --check
+      - name: Install the Claude Code CLI
+        id: cli
+        continue-on-error: true
+        run: npm install -g @anthropic-ai/claude-code && claude --version
+      - name: Validate marketplace, plugins and skills
+        if: steps.cli.outcome == 'success'
         run: |
           set -e
+          claude plugin validate --strict .
           for d in plugins/*/; do
             echo "== $d"
             claude plugin validate --strict "$d"
             claude plugin validate --strict "$d/skills"
           done
+          claude plugin validate --strict skills
+      - name: Report a skipped CLI validation
+        if: steps.cli.outcome != 'success'
+        run: echo "::warning::Claude Code CLI unavailable; skipped claude plugin validate. The sync check above still ran."
       - name: Every plugin is listed in the marketplace
         run: |
           set -e

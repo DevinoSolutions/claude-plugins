@@ -42,4 +42,4 @@ preset voices. Generation is metered by your plan.
 
 - Docs: https://voicelabs.now/docs/connecting-ai-assistants
 - Privacy: https://voicelabs.now/privacy
-- Support: https://voicelabs.now/support
+- Support: support@devino.ca

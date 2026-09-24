@@ -4,7 +4,7 @@
   "description": "Work your SuperBooks books from Claude: draft invoices, chase unpaid ones, categorize transactions and match receipts, and read profit and loss, burn rate and runway. Wraps the SuperBooks MCP connector with workflow skills.",
   "author": {
     "name": "Devino Solutions",
-    "email": "support@superbooks.io"
+    "email": "support@devino.ca"
   },
   "homepage": "https://docs.superbooks.io/mcp",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",

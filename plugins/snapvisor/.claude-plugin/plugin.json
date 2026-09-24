@@ -4,7 +4,7 @@
   "description": "Review visual regression builds from SnapVisor: see what changed, approve or reject, silence flaky changes, and run the review discussion. Wraps the SnapVisor MCP connector with workflow skills.",
   "author": {
     "name": "Devino Solutions",
-    "email": "support@snapvisor.io"
+    "email": "support@devino.ca"
   },
   "homepage": "https://snapvisor.io/docs/agents/mcp-server",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",

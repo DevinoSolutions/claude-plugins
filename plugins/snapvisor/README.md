@@ -46,4 +46,4 @@ review screenshots but cannot capture, upload or change one.
 
 - Docs: https://snapvisor.io/docs/agents/mcp-server
 - Privacy: https://snapvisor.io/privacy
-- Support: support@snapvisor.io
+- Support: support@devino.ca

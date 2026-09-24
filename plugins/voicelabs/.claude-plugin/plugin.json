@@ -4,7 +4,7 @@
   "description": "Turn text into speech in your VoiceLabs voices and transcribe audio to text from Claude. Wraps the VoiceLabs MCP connector with skills for reading text aloud, transcription, and managing voice profiles.",
   "author": {
     "name": "Devino Solutions",
-    "email": "aladdin@devino.ca"
+    "email": "support@devino.ca"
   },
   "homepage": "https://voicelabs.now/docs/connecting-ai-assistants",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",

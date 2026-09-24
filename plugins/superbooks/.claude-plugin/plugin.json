@@ -1,0 +1,20 @@
+{
+  "name": "superbooks",
+  "version": "1.0.0",
+  "description": "Work your SuperBooks books from Claude: draft invoices, chase unpaid ones, categorize transactions and match receipts, and read profit and loss, burn rate and runway. Wraps the SuperBooks MCP connector with workflow skills.",
+  "author": {
+    "name": "Devino Solutions",
+    "email": "support@superbooks.io"
+  },
+  "homepage": "https://docs.superbooks.io/mcp",
+  "repository": "https://github.com/DevinoSolutions/claude-plugins",
+  "license": "MIT",
+  "keywords": ["bookkeeping", "accounting", "invoices", "finance", "small business", "mcp"],
+  "skills": "./skills",
+  "mcpServers": {
+    "superbooks": {
+      "type": "http",
+      "url": "https://api.superbooks.io/mcp"
+    }
+  }
+}

@@ -10,7 +10,7 @@ and match receipts, and read profit and loss, burn rate and runway.
 /plugin install superbooks@devino
 ```
 
-Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-superbooks`, or the connector alone through a custom connector (Connectors Directory listing pending). See the [repository README](../../README.md#install) for each path.
+Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-superbooks`, or the connector alone through the [Connectors Directory listing](https://claude.ai/directory/connectors/superbooks). See the [repository README](../../README.md#install) for each path.
 
 Then ask Claude about your books. On the first tool call Claude opens the SuperBooks sign-in
 page; approve the scopes you want on the consent screen. An operation whose scope you did not

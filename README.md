@@ -72,13 +72,12 @@ available in Claude Code when you sign in with the same account.
 | [uNotes](https://unotes.net/docs/connecting-ai-assistants) | [claude.ai/directory/connectors/unotes](https://claude.ai/directory/connectors/unotes) | `https://unotes.net/api/mcp` | `unotes` | `building-study-guides`, `planning-revision`, `researching-course-material`, `setup-unotes` |
 | [Uptimely](https://getuptimely.com) | [claude.ai/directory/connectors/uptimely](https://claude.ai/directory/connectors/uptimely) | `https://app.getuptimely.com/api/mcp` | `uptimely` | `adding-uptime-monitors`, `checking-uptime-status`, `responding-to-incidents`, `writing-postmortems`, `setup-uptimely` |
 | [Notifly](https://notifly.io/docs/connecting-ai-assistants) | [claude.ai/directory/connectors/notifly](https://claude.ai/directory/connectors/notifly) | `https://api.notifly.io/mcp` | `notifly` | `checking-notification-delivery`, `reviewing-notification-workflows`, `sending-notifications`, `setup-notifly` |
-| [SnapVisor](https://snapvisor.io/docs/agents/mcp-server) | pending | `https://mcp.snapvisor.io` | `snapvisor` | `discussing-builds`, `handling-flaky-changes`, `reporting-snapvisor-usage`, `reviewing-visual-builds`, `setup-snapvisor` |
-| [SuperBooks](https://docs.superbooks.io/mcp) | pending | `https://api.superbooks.io/mcp` | `superbooks` | `chasing-unpaid-invoices`, `cleaning-up-bookkeeping`, `drafting-invoices`, `reading-financial-reports`, `setup-superbooks` |
+| [SnapVisor](https://snapvisor.io/docs/agents/mcp-server) | [claude.ai/directory/connectors/snapvisor](https://claude.ai/directory/connectors/snapvisor) | `https://mcp.snapvisor.io` | `snapvisor` | `discussing-builds`, `handling-flaky-changes`, `reporting-snapvisor-usage`, `reviewing-visual-builds`, `setup-snapvisor` |
+| [SuperBooks](https://docs.superbooks.io/mcp) | [claude.ai/directory/connectors/superbooks](https://claude.ai/directory/connectors/superbooks) | `https://api.superbooks.io/mcp` | `superbooks` | `chasing-unpaid-invoices`, `cleaning-up-bookkeeping`, `drafting-invoices`, `reading-financial-reports`, `setup-superbooks` |
 | [VoiceLabs](https://voicelabs.now/docs/connecting-ai-assistants) | pending | `https://app.voicelabs.now/api/mcp` | `voicelabs` | `managing-voice-library`, `reading-text-aloud`, `transcribing-audio`, `setup-voicelabs` |
 
-The directory links follow Anthropic's permanent listing format and the published slugs. SnapVisor
-and SuperBooks are in review and VoiceLabs is not listed, so those three use a custom connector
-for now.
+The directory links follow Anthropic's permanent listing format and the published slugs.
+VoiceLabs is not listed yet, so it uses a custom connector for now.
 
 ## Tool surfaces
 

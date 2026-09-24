@@ -22,7 +22,7 @@ Connect the SuperBooks MCP server, confirm it answers, and fix the usual reasons
 
 ### claude.ai, Claude Desktop, and Cowork
 
-1. SuperBooks is not listed in the Connectors Directory yet, so add it as a custom connector: Settings > Connectors > **Add custom connector**, name it SuperBooks, and paste `https://api.superbooks.io/mcp`. The Free plan allows one custom connector.
+1. Open the SuperBooks listing in the Connectors Directory: https://claude.ai/directory/connectors/superbooks and select **Connect**. In the app you can also search the directory for "SuperBooks".
 2. Sign in to SuperBooks in the page that opens and approve the consent screen.
 3. On a Team or Enterprise plan, an Owner may need to approve the connector first; members without that permission see a **Request** button.
 

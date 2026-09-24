@@ -12,13 +12,13 @@ Take the draft live, now or at a set time, through BioFlow's two-step publish. T
 - `page.list`: find the page and its public URL.
 - `page.get`: the draft and published summaries, so you can describe what differs.
 - `page.publish`: publish the draft now. Two-step: a call without `confirmToken` returns a preview of exactly what would go live plus a short-lived `confirmToken` and publishes nothing; a second call carrying that token commits.
-- `page.schedule_publish`: schedule the draft to publish at a later time. Same two-step contract: preview and `confirmToken` first, commit on the second call.
+- `page.schedule_publish`: schedule the draft to publish at `startsAt`, an ISO 8601 timestamp in the future. Same two-step contract: the first call schedules nothing and returns a preview and `confirmToken`; the second call carries the same `startsAt` plus the token.
 
 ## Workflow
 
 1. Call `page.list` and confirm which page the user means.
 2. Call `page.get` and summarize what is in the draft but not yet live.
-3. For a scheduled publish, resolve the time to a full date and time with the user's timezone and state it.
+3. For a scheduled publish, resolve the time to a full date and time in the user's timezone, state it, and convert it to an ISO 8601 `startsAt`.
 4. Call `page.publish` or `page.schedule_publish` without a `confirmToken`. Nothing goes live on this call.
 5. Show the user the preview the tool returned, in plain words: which blocks are added, changed, or removed, and the page title. For a schedule, repeat the time.
 6. Ask for an explicit yes. Do not treat silence, "ok, looks fine", or an earlier request as confirmation.
@@ -28,6 +28,6 @@ Take the draft live, now or at a set time, through BioFlow's two-step publish. T
 
 - The preview is the expected first response, not a failure. Never say "publish did nothing" after step 4.
 - Never pass a `confirmToken` the user has not approved in this conversation, and never reuse a token.
-- The token expires after about 10 minutes and any draft change invalidates it. If the commit is refused for either reason, start again at step 4 and show the new preview.
+- The token expires after 10 minutes. An expired, malformed, or mismatched token is refused with `CONFIRM_TOKEN_INVALID`, and a draft change in between is refused with `STALE_SNAPSHOT`. In either case start again at step 4 and show the new preview.
 - On `DANGEROUS_OPS_DISABLED`, publishing is turned off for the workspace. Give the user the settings link from the response (Settings, Connected AI apps) and stop. Only the user can turn it on.
 - If the publish tools are missing, the user did not grant the `publish` scope. Say so and tell them to reconnect with it.

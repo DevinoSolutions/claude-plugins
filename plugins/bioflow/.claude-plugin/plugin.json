@@ -1,0 +1,20 @@
+{
+  "name": "bioflow",
+  "version": "1.0.0",
+  "description": "Edit, publish, and measure your BioFlow link-in-bio pages. Wraps the BioFlow MCP connector with skills for draft editing, confirmed publishing, and page analytics and leads.",
+  "author": {
+    "name": "Devino Solutions",
+    "email": "aladdin@devino.ca"
+  },
+  "homepage": "https://getbioflow.com/docs/connecting-ai-assistants",
+  "repository": "https://github.com/DevinoSolutions/claude-plugins",
+  "license": "MIT",
+  "keywords": ["link in bio", "creator", "landing page", "analytics", "mcp"],
+  "skills": "./skills",
+  "mcpServers": {
+    "bioflow": {
+      "type": "http",
+      "url": "https://app.getbioflow.com/api/mcp"
+    }
+  }
+}

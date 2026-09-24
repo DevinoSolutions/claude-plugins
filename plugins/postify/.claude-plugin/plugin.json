@@ -4,7 +4,7 @@
   "description": "Draft, schedule, and publish social posts from your Postify calendar. Wraps the Postify MCP connector with skills for the content calendar, drafting, and performance review.",
   "author": {
     "name": "Devino Solutions",
-    "email": "support@usepostify.com"
+    "email": "support@devino.ca"
   },
   "homepage": "https://usepostify.com/docs/connecting-ai-assistants",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",

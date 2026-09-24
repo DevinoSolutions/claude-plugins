@@ -36,4 +36,4 @@ connector.
 
 - Docs: https://dodomain.io/docs/connecting-ai-assistants
 - Privacy: https://dodomain.io/privacy
-- Support: https://app.dodomain.io/support
+- Support: support@devino.ca

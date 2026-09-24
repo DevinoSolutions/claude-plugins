@@ -29,7 +29,7 @@ your own uploads. Flashcards, quizzes, streak, and quota are always scoped to yo
 rate-limited per user.
 
 Disconnecting the uNotes connector in Claude ends the calls. To clear the stored grant as well,
-see the connector docs page below or contact uNotes support.
+see the connector docs page below or email support@devino.ca.
 
 ## Skills
 

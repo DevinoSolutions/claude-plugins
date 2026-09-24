@@ -44,4 +44,4 @@ short-lived presigned links to your own files.
 
 - Docs: https://nowgetitdone.com/docs/connecting-ai-assistants
 - Privacy: https://nowgetitdone.com/privacy
-- Support: https://app.nowgetitdone.com/support
+- Support: support@devino.ca

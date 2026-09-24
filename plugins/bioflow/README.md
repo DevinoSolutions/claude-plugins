@@ -39,4 +39,4 @@ short-lived `confirmToken`; only a second call carrying that token commits.
 
 - Docs: https://getbioflow.com/docs/connecting-ai-assistants
 - Privacy: https://app.getbioflow.com/privacy
-- Support: https://app.getbioflow.com/support
+- Support: support@devino.ca

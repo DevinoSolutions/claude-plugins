@@ -35,4 +35,4 @@ person can enable, and a confirmation on every call.
 
 - Docs: https://usepostify.com/docs/connecting-ai-assistants
 - Privacy: https://usepostify.com/privacy
-- Support: support@usepostify.com
+- Support: support@devino.ca

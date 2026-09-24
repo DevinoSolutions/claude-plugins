@@ -46,9 +46,9 @@ Review and revoke connected assistants under Connected AI apps in your Notifly s
 
 | Skill | Use it when |
 |---|---|
-| `delivery-check` | "Did the welcome email go out to dana@example.com?", "Why didn't this subscriber get the reset email?" |
-| `send-notification` | "Send the order-confirmation workflow to subscriber wc-1020" |
-| `workflow-review` | "Which workflows do we have and on which channels?", "What topics exist?" |
+| `checking-notification-delivery` | "Did the welcome email go out to dana@example.com?", "Why didn't this subscriber get the reset email?" |
+| `sending-notifications` | "Send the order-confirmation workflow to subscriber wc-1020" |
+| `reviewing-notification-workflows` | "Which workflows do we have and on which channels?", "What topics exist?" |
 
 ## Links
 

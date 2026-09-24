@@ -69,10 +69,10 @@ gates. A server set to the per-tool surface lists them by name instead. The skil
 
 | Skill | Use it when |
 |---|---|
-| `draft-and-send-campaign` | "Draft a September newsletter for premium members", "Send a test", "Send it" |
-| `email-performance` | "How did my emails do this week?", "Did anything bounce?" |
-| `deliverability-check` | "Why is mail from my domain not landing?", "Clean this list before I send" |
-| `onboarding-workflow` | "Build a welcome series for new signups", "Why isn't my onboarding workflow running?" |
+| `sending-email-campaigns` | "Draft a September newsletter for premium members", "Send a test", "Send it" |
+| `reviewing-email-performance` | "How did my emails do this week?", "Did anything bounce?" |
+| `checking-email-deliverability` | "Why is mail from my domain not landing?", "Clean this list before I send" |
+| `building-onboarding-workflows` | "Build a welcome series for new signups", "Why isn't my onboarding workflow running?" |
 
 ## Links
 

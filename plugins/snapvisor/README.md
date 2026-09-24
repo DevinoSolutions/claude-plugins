@@ -40,10 +40,10 @@ by name (the `operationId`, such as `listBuilds`) instead; the skills handle bot
 
 | Skill | Use it when |
 |---|---|
-| `build-review` | "What changed in the latest build?", "Approve build 42, the nav restyle is intentional" |
-| `flaky-changes` | "Ignore the date-widget change, it's the flaky clock again", "Which tests are flaky?" |
-| `build-discussion` | "Summarize the comments on build 42", "Reply to the open thread and resolve it" |
-| `usage-report` | "How many builds did we run this month?", "Who is on the team?" |
+| `reviewing-visual-builds` | "What changed in the latest build?", "Approve build 42, the nav restyle is intentional" |
+| `handling-flaky-changes` | "Ignore the date-widget change, it's the flaky clock again", "Which tests are flaky?" |
+| `discussing-builds` | "Summarize the comments on build 42", "Reply to the open thread and resolve it" |
+| `reporting-snapvisor-usage` | "How many builds did we run this month?", "Who is on the team?" |
 
 ## Links
 

@@ -40,10 +40,10 @@ server set to the per-tool surface lists them by name instead. The skills handle
 
 | Skill | Use it when |
 |---|---|
-| `workload-review` | "What's on my plate this week?", "What's blocked right now?" |
-| `task-deep-dive` | "Open T-123, why can't it start?", "What does the screen recording on this task show?" |
-| `capture-tasks` | "Turn these meeting notes into tasks", "T-123 is waiting on T-120", "I did my workout yesterday" |
-| `developer-docs` | "What does the 429 problem code mean in the GetItDone API?" |
+| `reviewing-workload` | "What's on my plate this week?", "What's blocked right now?" |
+| `investigating-tasks` | "Open T-123, why can't it start?", "What does the screen recording on this task show?" |
+| `capturing-tasks` | "Turn these meeting notes into tasks", "T-123 is waiting on T-120", "I did my workout yesterday" |
+| `searching-getitdone-api-docs` | "What does the 429 problem code mean in the GetItDone API?" |
 
 ## Links
 

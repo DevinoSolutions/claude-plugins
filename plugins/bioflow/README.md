@@ -43,9 +43,9 @@ lists them by name instead. The skills handle both.
 
 | Skill | Use it when |
 |---|---|
-| `edit-page-draft` | "Add a link to my YouTube channel", "Rename my page title", "Move the newsletter block to the top" |
-| `publish-page` | "Publish my page", "Schedule my page to go live Monday at 9am" |
-| `page-insights` | "How did my page do last month?", "Who signed up through my page?" |
+| `editing-page-drafts` | "Add a link to my YouTube channel", "Rename my page title", "Move the newsletter block to the top" |
+| `publishing-pages` | "Publish my page", "Schedule my page to go live Monday at 9am" |
+| `analyzing-page-performance` | "How did my page do last month?", "Who signed up through my page?" |
 
 ## Links
 

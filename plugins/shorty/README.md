@@ -47,9 +47,9 @@ stops the next call.
 
 | Skill | Use it when |
 |---|---|
-| `summarize-source` | "Summarize this YouTube video", "Summarize this article for me", "Turn these notes into a summary" |
-| `transcribe-media` | "Transcribe this podcast episode", "Add captions to this clip" |
-| `library-research` | "What did I summarize this week?", "Find my notes about pricing", "How much quota is left?" |
+| `summarizing-sources` | "Summarize this YouTube video", "Summarize this article for me", "Turn these notes into a summary" |
+| `transcribing-media` | "Transcribe this podcast episode", "Add captions to this clip" |
+| `researching-summary-library` | "What did I summarize this week?", "Find my notes about pricing", "How much quota is left?" |
 
 ## Links
 

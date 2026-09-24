@@ -37,9 +37,9 @@ preset voices. Generation is metered by your plan.
 
 | Skill | Use it when |
 |---|---|
-| `read-aloud` | "Read this paragraph in my Narrator voice", "Narrate these five sections" |
-| `transcribe-audio` | "Transcribe this clip", "What did I record yesterday?" |
-| `voice-library` | "What voices do I have?", "Add a built-in narrator voice" |
+| `reading-text-aloud` | "Read this paragraph in my Narrator voice", "Narrate these five sections" |
+| `transcribing-audio` | "Transcribe this clip", "What did I record yesterday?" |
+| `managing-voice-library` | "What voices do I have?", "Add a built-in narrator voice" |
 
 ## Links
 

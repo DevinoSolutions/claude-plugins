@@ -39,9 +39,9 @@ server set to the per-tool surface lists them by name instead. The skills handle
 
 | Skill | Use it when |
 |---|---|
-| `content-calendar` | "What's scheduled next week?", "Move Friday's post to Monday 9am", "Where are the gaps?" |
-| `draft-post` | "Draft a LinkedIn post about our 2.0 release" |
-| `performance-review` | "How did last month go?", "When should I post on Instagram?" |
+| `managing-content-calendar` | "What's scheduled next week?", "Move Friday's post to Monday 9am", "Where are the gaps?" |
+| `drafting-social-posts` | "Draft a LinkedIn post about our 2.0 release" |
+| `reviewing-social-performance` | "How did last month go?", "When should I post on Instagram?" |
 
 ## Links
 

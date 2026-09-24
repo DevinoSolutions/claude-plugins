@@ -53,10 +53,10 @@ Review and revoke connected assistants under Connected AI apps in your Uptimely 
 
 | Skill | Use it when |
 |---|---|
-| `status-check` | "Is anything down?", "Who is on call?", "How did the checkout monitor do this week?" |
-| `incident-response` | "Declare an incident for the checkout API", "Acknowledge that alert", "Check the landing page now" |
-| `postmortem` | "Write up the postmortem for yesterday's outage" |
-| `add-monitor` | "Start monitoring https://api.example.com/health" |
+| `checking-uptime-status` | "Is anything down?", "Who is on call?", "How did the checkout monitor do this week?" |
+| `responding-to-incidents` | "Declare an incident for the checkout API", "Acknowledge that alert", "Check the landing page now" |
+| `writing-postmortems` | "Write up the postmortem for yesterday's outage" |
+| `adding-uptime-monitors` | "Start monitoring https://api.example.com/health" |
 
 ## Links
 

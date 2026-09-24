@@ -55,10 +55,10 @@ above by name, without the `external_` prefix; the skills handle both.
 
 | Skill | Use it when |
 |---|---|
-| `draft-invoice` | "Invoice Cedar Valley Books for 6 hours of design at $125", "Bill my September hours on Harbor & Pine" |
-| `unpaid-invoices` | "Which invoices are unpaid?", "Who owes me the most?" |
-| `bookkeeping-cleanup` | "Categorize last month's transactions", "Match the receipts in my inbox" |
-| `financial-report` | "How did June to September go?", "What's my runway?" |
+| `drafting-invoices` | "Invoice Cedar Valley Books for 6 hours of design at $125", "Bill my September hours on Harbor & Pine" |
+| `chasing-unpaid-invoices` | "Which invoices are unpaid?", "Who owes me the most?" |
+| `cleaning-up-bookkeeping` | "Categorize last month's transactions", "Match the receipts in my inbox" |
+| `reading-financial-reports` | "How did June to September go?", "What's my runway?" |
 
 ## Links
 

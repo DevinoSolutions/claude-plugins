@@ -1,0 +1,19 @@
+{
+  "name": "devino",
+  "owner": {
+    "name": "Devino Solutions",
+    "email": "support@devino.ca"
+  },
+  "metadata": {
+    "description": "Claude plugins for Devino Solutions products. Each plugin wraps the product's remote MCP connector with workflow skills.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "postify",
+      "source": "./plugins/postify",
+      "description": "Draft, schedule, and publish social posts from your Postify calendar.",
+      "category": "productivity"
+    }
+  ]
+}

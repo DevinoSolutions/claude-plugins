@@ -1,0 +1,31 @@
+name: validate
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install -g @anthropic-ai/claude-code
+      - name: Validate marketplace
+        run: claude plugin validate --strict .
+      - name: Validate every plugin
+        run: |
+          set -e
+          for d in plugins/*/; do
+            echo "== $d"
+            claude plugin validate --strict "$d"
+            claude plugin validate --strict "$d/skills"
+          done
+      - name: Every plugin is listed in the marketplace
+        run: |
+          set -e
+          for d in plugins/*/; do
+            n=$(basename "$d")
+            grep -q "\"source\": \"./plugins/$n\"" .claude-plugin/marketplace.json || { echo "missing $n in marketplace.json"; exit 1; }
+          done

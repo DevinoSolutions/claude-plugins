@@ -6,80 +6,382 @@
   },
   "metadata": {
     "description": "Claude plugins for Devino Solutions products. Each plugin wraps the product's remote MCP connector with workflow skills.",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "postify",
       "source": "./plugins/postify",
-      "description": "Draft, schedule, and publish social posts from your Postify calendar.",
-      "category": "productivity"
+      "displayName": "Postify",
+      "description": "Plan, draft, and schedule social media posts from Claude with Postify: review your content calendar, write LinkedIn, X, Instagram, Facebook, and TikTok drafts, reschedule posts, and report what performed.",
+      "category": "productivity",
+      "tags": [
+        "social-media",
+        "marketing",
+        "scheduling",
+        "mcp"
+      ],
+      "keywords": [
+        "postify",
+        "post ify",
+        "social media",
+        "social media scheduler",
+        "schedule posts",
+        "content calendar",
+        "draft linkedin post",
+        "write a tweet",
+        "instagram caption",
+        "social media planner",
+        "posting schedule",
+        "best time to post",
+        "social media analytics",
+        "marketing",
+        "mcp"
+      ],
+      "homepage": "https://usepostify.com/docs/connecting-ai-assistants"
     },
     {
       "name": "dodomain",
       "source": "./plugins/dodomain",
-      "description": "Pre-flight, connect, and verify customer domains from your doDomain team.",
-      "category": "development"
+      "displayName": "doDomain",
+      "description": "Connect customers' own domains to your apps from Claude with doDomain: find who runs DNS for a domain, start connect sessions with the exact DNS records, verify them, and find broken or drifted connections.",
+      "category": "development",
+      "tags": [
+        "domains",
+        "dns",
+        "saas",
+        "mcp"
+      ],
+      "keywords": [
+        "dodomain",
+        "do domain",
+        "dodomains",
+        "custom domains",
+        "customer domains",
+        "connect domain",
+        "dns records",
+        "domain connect",
+        "one-click dns",
+        "white-label domain",
+        "dns provider lookup",
+        "verify domain",
+        "dns health",
+        "saas custom domain",
+        "mcp"
+      ],
+      "homepage": "https://dodomain.io/docs/connecting-ai-assistants"
     },
     {
       "name": "getitdone",
       "source": "./plugins/getitdone",
-      "description": "Review, create, and update tasks in your GetItDone workspaces.",
-      "category": "productivity"
+      "displayName": "GetItDone",
+      "description": "Manage tasks from Claude with GetItDone: see what is due, in progress, and blocked, open a task in full, turn notes into tasks, link dependencies, mark habits done, and look up the GetItDone API docs.",
+      "category": "productivity",
+      "tags": [
+        "tasks",
+        "project-management",
+        "teams",
+        "mcp"
+      ],
+      "keywords": [
+        "getitdone",
+        "get it done",
+        "getitdon",
+        "task manager",
+        "to-do list",
+        "todo app",
+        "project management",
+        "create tasks",
+        "meeting notes to tasks",
+        "what is blocked",
+        "workload",
+        "habit tracker",
+        "task dependencies",
+        "team tasks",
+        "mcp"
+      ],
+      "homepage": "https://nowgetitdone.com/docs/connecting-ai-assistants"
     },
     {
       "name": "bioflow",
       "source": "./plugins/bioflow",
-      "description": "Edit, publish, and measure your BioFlow link-in-bio pages.",
-      "category": "productivity"
+      "displayName": "BioFlow",
+      "description": "Edit, publish, and measure link-in-bio pages from Claude with BioFlow: add and reorder links and blocks in a draft, publish or schedule with a preview and confirmation, and report views, clicks, and signups.",
+      "category": "productivity",
+      "tags": [
+        "link-in-bio",
+        "creators",
+        "marketing",
+        "mcp"
+      ],
+      "keywords": [
+        "bioflow",
+        "bio flow",
+        "bioflo",
+        "link in bio",
+        "bio link",
+        "link in bio page",
+        "creator landing page",
+        "add link to bio",
+        "publish page",
+        "link clicks",
+        "page analytics",
+        "newsletter signups",
+        "leads",
+        "creators",
+        "mcp"
+      ],
+      "homepage": "https://getbioflow.com/docs/connecting-ai-assistants"
     },
     {
       "name": "sendly",
       "source": "./plugins/sendly",
-      "description": "Run your Sendly email workspace: contacts, campaigns, workflows, deliverability, and analytics.",
-      "category": "productivity"
+      "displayName": "Sendly",
+      "description": "Run email from Claude with Sendly: draft and send campaigns after confirming the recipient count, report opens and bounces, fix deliverability and DKIM, SPF, and DMARC records, and build onboarding workflows.",
+      "category": "productivity",
+      "tags": [
+        "email",
+        "email-marketing",
+        "deliverability",
+        "mcp"
+      ],
+      "keywords": [
+        "sendly",
+        "sendley",
+        "send ly",
+        "email marketing",
+        "email campaigns",
+        "newsletter",
+        "send campaign",
+        "email deliverability",
+        "emails going to spam",
+        "dkim spf dmarc",
+        "email analytics",
+        "bounce rate",
+        "welcome series",
+        "drip campaign",
+        "transactional email",
+        "mcp"
+      ],
+      "homepage": "https://docs.sendly.now/guides/mcp"
     },
     {
       "name": "shorty",
       "source": "./plugins/shorty",
-      "description": "Summarize and transcribe videos, audio, documents, and web pages with Shorty.",
-      "category": "productivity"
+      "displayName": "Shorty",
+      "description": "Summarize and transcribe from Claude with Shorty: summarize YouTube videos, web pages, articles, and documents, transcribe podcasts and recordings, add subtitles, and search your saved summaries.",
+      "category": "productivity",
+      "tags": [
+        "summarization",
+        "transcription",
+        "research",
+        "mcp"
+      ],
+      "keywords": [
+        "shorty",
+        "ai shorty",
+        "aishorty",
+        "summarize youtube video",
+        "video summarizer",
+        "article summarizer",
+        "summarize article",
+        "tldr",
+        "transcribe podcast",
+        "transcription",
+        "speech to text",
+        "subtitles",
+        "captions",
+        "research notes",
+        "mcp"
+      ],
+      "homepage": "https://aishorty.com/docs/connecting-ai-assistants"
     },
     {
       "name": "unotes",
       "source": "./plugins/unotes",
-      "description": "Search the uNotes study library and your own study data, read-only.",
-      "category": "productivity"
+      "displayName": "uNotes",
+      "description": "Study from Claude with uNotes, read-only: find course notes, past exams, and lab reports in the uNotes library, turn documents into study guides and practice questions, and plan revision from your flashcards, quizzes, and streak.",
+      "category": "learning",
+      "tags": [
+        "education",
+        "study",
+        "students",
+        "mcp"
+      ],
+      "keywords": [
+        "unotes",
+        "u notes",
+        "unote",
+        "study notes",
+        "course notes",
+        "past exams",
+        "lecture notes",
+        "study guide",
+        "cheat sheet",
+        "practice questions",
+        "flashcards",
+        "quizzes",
+        "exam prep",
+        "revision plan",
+        "education",
+        "mcp"
+      ],
+      "homepage": "https://unotes.net/docs/connecting-ai-assistants"
     },
     {
       "name": "uptimely",
       "source": "./plugins/uptimely",
-      "description": "Check monitors, incidents, alerts, and on-call in Uptimely, and run incident response with confirmation.",
-      "category": "development"
+      "displayName": "Uptimely",
+      "description": "Monitor uptime and run incidents from Claude with Uptimely: check what is down and who is on call, declare and resolve incidents with confirmation, write postmortems, and add monitors for your URLs and APIs.",
+      "category": "monitoring",
+      "tags": [
+        "uptime",
+        "incident-management",
+        "devops",
+        "mcp"
+      ],
+      "keywords": [
+        "uptimely",
+        "uptimly",
+        "uptime monitoring",
+        "is my site down",
+        "website monitoring",
+        "api monitoring",
+        "incident management",
+        "declare incident",
+        "on-call",
+        "status page",
+        "postmortem",
+        "root cause analysis",
+        "downtime alerts",
+        "devops",
+        "sre",
+        "mcp"
+      ],
+      "homepage": "https://getuptimely.com"
     },
     {
       "name": "notifly",
       "source": "./plugins/notifly",
-      "description": "Read Notifly workflows, subscribers, and delivery history, and send a workflow with two-step confirmation.",
-      "category": "development"
+      "displayName": "Notifly",
+      "description": "Check and send notifications from Claude with Notifly: see whether an email, SMS, push, or in-app notification reached a subscriber, review workflows and topics, and send a workflow after a two-step confirmation.",
+      "category": "development",
+      "tags": [
+        "notifications",
+        "messaging",
+        "developer-tools",
+        "mcp"
+      ],
+      "keywords": [
+        "notifly",
+        "notify",
+        "notifications",
+        "notification infrastructure",
+        "send notification",
+        "trigger workflow",
+        "email notifications",
+        "sms notifications",
+        "push notifications",
+        "in-app notifications",
+        "did the email send",
+        "delivery status",
+        "notification workflows",
+        "subscribers",
+        "mcp"
+      ],
+      "homepage": "https://notifly.io/docs/connecting-ai-assistants"
     },
     {
       "name": "snapvisor",
       "source": "./plugins/snapvisor",
-      "description": "Review visual regression builds from SnapVisor: see what changed, approve or reject, and handle flaky changes.",
-      "category": "development"
+      "displayName": "SnapVisor",
+      "description": "Review visual regression builds from Claude with SnapVisor: see what changed in screenshot diffs, approve or reject builds with confirmation, handle flaky changes, join review threads, and report usage.",
+      "category": "testing",
+      "tags": [
+        "visual-testing",
+        "ci",
+        "code-review",
+        "mcp"
+      ],
+      "keywords": [
+        "snapvisor",
+        "snap visor",
+        "snapviser",
+        "visual regression testing",
+        "visual testing",
+        "screenshot testing",
+        "screenshot diff",
+        "ui regression",
+        "approve build",
+        "flaky tests",
+        "visual review",
+        "ci",
+        "code review",
+        "mcp"
+      ],
+      "homepage": "https://snapvisor.io/docs/agents/mcp-server"
     },
     {
       "name": "superbooks",
       "source": "./plugins/superbooks",
-      "description": "Draft invoices, chase unpaid ones, categorize transactions and read financial reports from SuperBooks.",
-      "category": "productivity"
+      "displayName": "SuperBooks",
+      "description": "Do bookkeeping from Claude with SuperBooks: draft and send invoices with confirmation, see who owes you, categorize transactions and match receipts, and read profit and loss, burn rate, and runway.",
+      "category": "finance",
+      "tags": [
+        "bookkeeping",
+        "invoicing",
+        "small-business",
+        "mcp"
+      ],
+      "keywords": [
+        "superbooks",
+        "super books",
+        "superbook",
+        "bookkeeping",
+        "accounting",
+        "invoicing",
+        "create invoice",
+        "unpaid invoices",
+        "accounts receivable",
+        "categorize transactions",
+        "match receipts",
+        "profit and loss",
+        "runway",
+        "burn rate",
+        "small business",
+        "mcp"
+      ],
+      "homepage": "https://docs.superbooks.io/mcp"
     },
     {
       "name": "voicelabs",
       "source": "./plugins/voicelabs",
-      "description": "Turn text into speech in your VoiceLabs voices and transcribe audio to text.",
-      "category": "productivity"
+      "displayName": "VoiceLabs",
+      "description": "Turn text into speech and speech into text from Claude with VoiceLabs: read scripts aloud in your voices, make voiceovers, transcribe recordings, and manage and clone voice profiles with consent.",
+      "category": "productivity",
+      "tags": [
+        "text-to-speech",
+        "transcription",
+        "voice",
+        "mcp"
+      ],
+      "keywords": [
+        "voicelabs",
+        "voice labs",
+        "voicelab",
+        "text to speech",
+        "tts",
+        "voiceover",
+        "read aloud",
+        "narration",
+        "ai voice",
+        "voice cloning",
+        "transcription",
+        "speech to text",
+        "transcribe audio",
+        "mcp"
+      ],
+      "homepage": "https://voicelabs.now/docs/connecting-ai-assistants"
     }
   ]
 }

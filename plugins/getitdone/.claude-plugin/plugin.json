@@ -1,15 +1,33 @@
 {
   "name": "getitdone",
-  "version": "1.0.0",
-  "description": "Review, create, and update tasks in your GetItDone workspaces. Wraps the GetItDone MCP connector with skills for workload review, task deep dives, task capture, and developer docs lookup.",
+  "displayName": "GetItDone",
+  "version": "1.1.0",
+  "description": "Manage tasks from Claude with GetItDone: see what is due, in progress, and blocked, open a task in full, turn notes into tasks, link dependencies, mark habits done, and look up the GetItDone API docs.",
   "author": {
     "name": "Devino Solutions",
-    "email": "support@devino.ca"
+    "email": "support@devino.ca",
+    "url": "https://devino.ca"
   },
   "homepage": "https://nowgetitdone.com/docs/connecting-ai-assistants",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",
   "license": "MIT",
-  "keywords": ["tasks", "task management", "project management", "productivity", "mcp"],
+  "keywords": [
+    "getitdone",
+    "get it done",
+    "getitdon",
+    "task manager",
+    "to-do list",
+    "todo app",
+    "project management",
+    "create tasks",
+    "meeting notes to tasks",
+    "what is blocked",
+    "workload",
+    "habit tracker",
+    "task dependencies",
+    "team tasks",
+    "mcp"
+  ],
   "skills": "./skills",
   "mcpServers": {
     "getitdone": {

@@ -1,15 +1,34 @@
 {
   "name": "unotes",
-  "version": "1.0.0",
-  "description": "Read-only access to the uNotes study library and your own study data. Wraps the uNotes MCP connector with skills for researching course material, building a study guide from a document, and checking what to revise.",
+  "displayName": "uNotes",
+  "version": "1.1.0",
+  "description": "Study from Claude with uNotes, read-only: find course notes, past exams, and lab reports in the uNotes library, turn documents into study guides and practice questions, and plan revision from your flashcards, quizzes, and streak.",
   "author": {
     "name": "Devino Solutions",
-    "email": "support@devino.ca"
+    "email": "support@devino.ca",
+    "url": "https://devino.ca"
   },
   "homepage": "https://unotes.net/docs/connecting-ai-assistants",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",
   "license": "MIT",
-  "keywords": ["study", "education", "flashcards", "quizzes", "course notes", "mcp"],
+  "keywords": [
+    "unotes",
+    "u notes",
+    "unote",
+    "study notes",
+    "course notes",
+    "past exams",
+    "lecture notes",
+    "study guide",
+    "cheat sheet",
+    "practice questions",
+    "flashcards",
+    "quizzes",
+    "exam prep",
+    "revision plan",
+    "education",
+    "mcp"
+  ],
   "skills": "./skills",
   "mcpServers": {
     "unotes": {

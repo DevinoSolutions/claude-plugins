@@ -1,15 +1,33 @@
 {
   "name": "notifly",
-  "version": "1.0.0",
-  "description": "Read your Notifly workflows, subscribers, topics, and delivery history, and send a workflow with two-step confirmation. Wraps the Notifly MCP connector with skills for checking delivery, sending a notification, and reviewing workflow setup.",
+  "displayName": "Notifly",
+  "version": "1.1.0",
+  "description": "Check and send notifications from Claude with Notifly: see whether an email, SMS, push, or in-app notification reached a subscriber, review workflows and topics, and send a workflow after a two-step confirmation.",
   "author": {
     "name": "Devino Solutions",
-    "email": "support@devino.ca"
+    "email": "support@devino.ca",
+    "url": "https://devino.ca"
   },
   "homepage": "https://notifly.io/docs/connecting-ai-assistants",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",
   "license": "MIT",
-  "keywords": ["notifications", "email", "sms", "push", "in-app", "workflows", "mcp"],
+  "keywords": [
+    "notifly",
+    "notify",
+    "notifications",
+    "notification infrastructure",
+    "send notification",
+    "trigger workflow",
+    "email notifications",
+    "sms notifications",
+    "push notifications",
+    "in-app notifications",
+    "did the email send",
+    "delivery status",
+    "notification workflows",
+    "subscribers",
+    "mcp"
+  ],
   "skills": "./skills",
   "mcpServers": {
     "notifly": {

@@ -7,6 +7,10 @@ description: Review a Notifly environment's notification setup: workflows with t
 
 Give the user a clear map of what their Notifly environment sends, on which channels, and how it has been doing.
 
+## Calling the tools
+
+The Notifly server's default surface lists two tools, `search_tools` and `execute_typescript`. Call `search_tools` for the declarations, then call each operation below as `external_<name>(...)` inside an `execute_typescript` program. Fetch several workflows in one program with `Promise.all` over `external_get_workflow`. A denied call throws an Error whose message starts with its code. If the operations are listed as individual tools instead, call them directly.
+
 ## Tools you will use
 
 - `list_workflows`: the workflows in the connected environment with identifiers, names, tags, and status.

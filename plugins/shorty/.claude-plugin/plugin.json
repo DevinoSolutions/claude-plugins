@@ -4,7 +4,7 @@
   "description": "Summarize and transcribe videos, audio, documents, and web pages with Shorty. Wraps the Shorty MCP connector with skills for summarizing a source, transcribing media, and researching your summary library.",
   "author": {
     "name": "Devino Solutions",
-    "email": "hello@devino.ca"
+    "email": "support@devino.ca"
   },
   "homepage": "https://aishorty.com/docs/connecting-ai-assistants",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",

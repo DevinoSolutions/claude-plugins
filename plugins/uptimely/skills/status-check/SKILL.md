@@ -7,8 +7,13 @@ description: Report the current health of an Uptimely project and its recent his
 
 Answer "is anything wrong, and who is handling it" for one Uptimely project from live data.
 
+## Calling the tools
+
+The Uptimely server's default surface lists two tools, `search_tools` and `execute_typescript`. Call `search_tools` for the declarations, then call each operation below as `external_<name>(...)` inside an `execute_typescript` program. Batch independent reads with `Promise.all`, for example the overview, monitor list, and open incidents in one program. A denied call throws an Error whose message starts with its code, such as `PROJECT_ACCESS_DENIED:`. If the operations are listed as individual tools instead, call them directly.
+
 ## Tools you will use
 
+- `uptimely_project_list`: the projects this connection can reach, with their ids. Takes no input.
 - `uptimely_project_overview`: monitor, incident, alert, and status page counts plus the project's overall health.
 - `uptimely_monitor_list`: every monitor with its current status.
 - `uptimely_monitor_get`: one monitor's configuration.
@@ -24,7 +29,7 @@ Answer "is anything wrong, and who is handling it" for one Uptimely project from
 
 ## Workflow
 
-1. Get the `projectId`. Every tool needs it. If the user has not given one in this conversation, ask for it; there is no tool here that lists projects. Reuse it for every later call.
+1. Get the `projectId`. Every operation except `uptimely_project_list` needs it. Call `uptimely_project_list`; if it returns one project, use it, and if several, ask the user which one. Reuse the id for every later call.
 2. Call `uptimely_project_overview`. Lead with the overall health in one line.
 3. If anything is not healthy, call `uptimely_monitor_list` and name the monitors that are down or degraded, then `uptimely_incident_list` with `activeOnly: true` and `uptimely_alert_list`, and name the open incidents and active alerts with their state and severity.
 4. Call `uptimely_on_call_current` and say who is on call now and who is next.
@@ -34,7 +39,7 @@ Answer "is anything wrong, and who is handling it" for one Uptimely project from
 
 ## Rules
 
-- Never call a write tool from this skill: `uptimely_monitor_create`, `uptimely_run_monitor_probe`, `uptimely_incident_declare`, `uptimely_incident_state_change`, `uptimely_incident_postmortem_save`, `uptimely_alert_create`, or `uptimely_alert_state_change`.
-- `PROJECT_ACCESS_DENIED` means the id is wrong or the account is not a member. Ask the user to check the project id; do not guess another one.
+- Never call a write operation from this skill: `uptimely_monitor_create`, `uptimely_run_monitor_probe`, `uptimely_incident_declare`, `uptimely_incident_state_change`, `uptimely_incident_postmortem_save`, `uptimely_alert_create`, or `uptimely_alert_state_change`.
+- `PROJECT_ACCESS_DENIED` means the id is wrong or the account is not a member. Use `uptimely_project_list` to pick a valid id; never guess one.
 - Report times in the user's timezone and say which one you used.
 - Report only what the tools return. Do not estimate uptime percentages the data does not contain.

@@ -4,7 +4,7 @@
   "description": "Check monitors, incidents, alerts, and on-call in Uptimely, and run incident response with confirmation. Wraps the Uptimely MCP connector with skills for status checks, incident response, postmortems, and adding monitors.",
   "author": {
     "name": "Devino Solutions",
-    "email": "support@getuptimely.com"
+    "email": "support@devino.ca"
   },
   "homepage": "https://getuptimely.com",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",

@@ -43,4 +43,4 @@ see the connector docs page below or contact uNotes support.
 
 - Docs: https://unotes.net/docs/connecting-ai-assistants
 - Privacy: https://unotes.net/privacy
-- Support: https://unotes.net/support
+- Support: support@devino.ca

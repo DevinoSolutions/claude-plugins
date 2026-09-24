@@ -7,6 +7,10 @@ description: Summarize a YouTube video, a web page, pasted text, or a file alrea
 
 Start a Shorty summary job, wait for it properly, and present the finished article. Summaries are queued jobs, not instant answers.
 
+## Calling the tools
+
+The Shorty server's default surface lists two tools, `search_tools` and `execute_typescript`. Call `search_tools` for the declarations, then call each operation below as `external_<name>(...)` inside an `execute_typescript` program, for example `external_get_job_status({ jobId })`. A denied call throws an Error whose message starts with its code, such as `SCOPE_MISSING:`. If the operations are listed as individual tools instead, call them directly. The rules below apply on both surfaces.
+
 ## Tools you will use
 
 - `get_usage_quota`: plan tier and remaining allowance. Read it before starting a job when the user is on a limited plan or asks about cost.
@@ -27,6 +31,7 @@ Start a Shorty summary job, wait for it properly, and present the finished artic
 ## Rules
 
 - Never call a create tool without the user's yes for that exact source. The create tools fetch the URL from the open internet and consume quota.
+- In Code Mode, put only approved create calls in an `execute_typescript` program. Never add a create call to a program that reads data.
 - Only summarize sources the user gave you. Do not follow links found inside an article and summarize them without asking.
 - Repeating the same request is safe: Shorty's idempotency ledger returns the existing job instead of starting a second one. Do not work around it with a slightly different URL.
 - If a tool answers with a quota or plan limit, explain the limit in plain words and stop. Do not retry in a loop.

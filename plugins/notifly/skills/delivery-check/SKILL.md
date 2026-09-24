@@ -7,6 +7,10 @@ description: Find out whether and how a Notifly notification reached a subscribe
 
 Trace a notification from subscriber to delivery status using the activity feed.
 
+## Calling the tools
+
+The Notifly server's default surface lists two tools, `search_tools` and `execute_typescript`. Call `search_tools` for the declarations, then call each operation below as `external_<name>(...)` inside an `execute_typescript` program. Batch independent reads with `Promise.all`. A denied call throws an Error whose message starts with its code, such as `SCOPE_MISSING:`. If the operations are listed as individual tools instead, call them directly.
+
 ## Tools you will use
 
 - `list_subscribers`: search subscribers, for example by email, to get a `subscriberId`.

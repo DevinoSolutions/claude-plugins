@@ -16,10 +16,15 @@ not grant is never registered for the session.
 ## What it connects
 
 Remote MCP server `https://aishorty.com/api/mcp` (OAuth 2.1 with PKCE). The host is the apex
-domain, not an `app.` subdomain. Tools:
+domain, not an `app.` subdomain. Operations:
 `search_articles`, `list_recent_articles`, `get_article`, `list_transcriptions`,
 `get_transcription`, `get_usage_quota`, `get_job_status`, `search_docs`,
 `create_youtube_summary`, `create_content_summary`, `create_transcription`, `create_subtitles`.
+
+The server's default surface is Code Mode: `tools/list` shows two tools, `search_tools` and
+`execute_typescript`, and each operation above is called as `external_<name>` inside an
+`execute_typescript` program with the same scope, consent, and audit checks. When the server
+runs its full surface instead, each operation is its own tool. The skills handle both.
 
 The four `create_*` tools start queued jobs that take seconds to minutes, fetch the URL you
 supply from the open internet, and count against your Shorty plan's quota. Each returns a job
@@ -43,4 +48,4 @@ stops the next call.
 
 - Docs: https://aishorty.com/docs/connecting-ai-assistants
 - Privacy: https://aishorty.com/privacy
-- Support: https://aishorty.com/support
+- Support: support@devino.ca

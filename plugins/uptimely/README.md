@@ -16,8 +16,9 @@ registered for the session.
 
 ## What it connects
 
-Remote MCP server `https://app.getuptimely.com/api/mcp` (OAuth 2.1 with PKCE). Tools:
+Remote MCP server `https://app.getuptimely.com/api/mcp` (OAuth 2.1 with PKCE). Operations:
 
+- Discovery: `uptimely_project_list` (the projects this connection can reach; takes no input).
 - Read: `uptimely_project_overview`, `uptimely_monitor_list`, `uptimely_monitor_get`,
   `uptimely_monitor_status_history`, `uptimely_monitor_target_list`, `uptimely_incident_list`,
   `uptimely_incident_get`, `uptimely_alert_list`, `uptimely_maintenance_list`,
@@ -26,8 +27,14 @@ Remote MCP server `https://app.getuptimely.com/api/mcp` (OAuth 2.1 with PKCE). T
   `uptimely_incident_state_change`, `uptimely_incident_postmortem_save`,
   `uptimely_alert_create`, `uptimely_alert_state_change`.
 
-Every call names the project it acts on (`projectId`); there is no current project. Access is
-re-checked against your Uptimely membership on every call.
+The server's default surface is Code Mode: `tools/list` shows two tools, `search_tools` and
+`execute_typescript`, and each operation above is called as `external_<name>` inside an
+`execute_typescript` program with the same auth, tenancy, and write-gate checks. When the server
+runs its full surface instead, each operation is its own tool. The skills handle both.
+
+Every operation except `uptimely_project_list` names the project it acts on (`projectId`);
+there is no current project. Access is re-checked against your Uptimely membership on every
+call.
 
 The write tools stay inert until a project owner turns on Allow AI write operations under
 Settings > API Keys. It is off by default. Six write tools reach outside Uptimely: a probe hits
@@ -49,4 +56,4 @@ Review and revoke connected assistants under Connected AI apps in your Uptimely 
 
 - Docs: https://getuptimely.com/docs/api
 - Privacy: https://getuptimely.com/privacy
-- Support: https://app.getuptimely.com/support
+- Support: support@devino.ca

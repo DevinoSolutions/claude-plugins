@@ -7,6 +7,10 @@ description: Search and read the user's existing Shorty summaries and transcript
 
 Answer questions from the summaries and transcripts the user already has in Shorty, naming the article or transcript each point came from.
 
+## Calling the tools
+
+The Shorty server's default surface lists two tools, `search_tools` and `execute_typescript`. Call `search_tools` for the declarations, then call each operation below as `external_<name>(...)` inside an `execute_typescript` program. Batch independent reads with `Promise.all`, for example several `external_get_article` calls in one program. A denied call throws an Error whose message starts with its code. If the operations are listed as individual tools instead, call them directly.
+
 ## Tools you will use
 
 - `list_recent_articles`: the newest summary articles (`limit` 1 to 20) with id, title, description, type, and date.

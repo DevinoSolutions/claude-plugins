@@ -16,6 +16,30 @@
       "category": "productivity"
     },
     {
+      "name": "dodomain",
+      "source": "./plugins/dodomain",
+      "description": "Pre-flight, connect, and verify customer domains from your doDomain team.",
+      "category": "development"
+    },
+    {
+      "name": "getitdone",
+      "source": "./plugins/getitdone",
+      "description": "Review, create, and update tasks in your GetItDone workspaces.",
+      "category": "productivity"
+    },
+    {
+      "name": "bioflow",
+      "source": "./plugins/bioflow",
+      "description": "Edit, publish, and measure your BioFlow link-in-bio pages.",
+      "category": "productivity"
+    },
+    {
+      "name": "sendly",
+      "source": "./plugins/sendly",
+      "description": "Run your Sendly email workspace: contacts, campaigns, workflows, deliverability, and analytics.",
+      "category": "productivity"
+    },
+    {
       "name": "snapvisor",
       "source": "./plugins/snapvisor",
       "description": "Review visual regression builds from SnapVisor: see what changed, approve or reject, and handle flaky changes.",

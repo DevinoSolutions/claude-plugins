@@ -19,6 +19,10 @@ connector's tools become available. Each plugin's README lists its tools and ski
 | Plugin | Product | MCP endpoint |
 |---|---|---|
 | `postify` | [Postify](https://usepostify.com) social media scheduling | `https://app.usepostify.com/api/mcp` |
+| `dodomain` | [doDomain](https://dodomain.io) domain connect for your customers' own domains | `https://app.dodomain.io/api/mcp` |
+| `getitdone` | [GetItDone](https://nowgetitdone.com) team task and workspace manager | `https://app.nowgetitdone.com/api/mcp` |
+| `bioflow` | [BioFlow](https://getbioflow.com) link-in-bio pages | `https://app.getbioflow.com/api/mcp` |
+| `sendly` | [Sendly](https://sendly.now) email platform for product teams | `https://app.sendly.now/api/mcp` |
 | `snapvisor` | [SnapVisor](https://snapvisor.io) visual regression testing | `https://mcp.snapvisor.io` |
 | `superbooks` | [SuperBooks](https://superbooks.io) bookkeeping and invoices | `https://api.superbooks.io/mcp` |
 | `voicelabs` | [VoiceLabs](https://voicelabs.now) text to speech and transcription | `https://app.voicelabs.now/api/mcp` |

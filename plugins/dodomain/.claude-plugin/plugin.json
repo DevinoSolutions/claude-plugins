@@ -1,0 +1,20 @@
+{
+  "name": "dodomain",
+  "version": "1.0.0",
+  "description": "Pre-flight, connect, and verify customer domains from your doDomain team. Wraps the doDomain MCP connector with skills for domain pre-flight checks, connect sessions, and connection health.",
+  "author": {
+    "name": "Devino Solutions",
+    "email": "aladdin@devino.ca"
+  },
+  "homepage": "https://dodomain.io/docs/connecting-ai-assistants",
+  "repository": "https://github.com/DevinoSolutions/claude-plugins",
+  "license": "MIT",
+  "keywords": ["domains", "dns", "custom domains", "domain connect", "mcp"],
+  "skills": "./skills",
+  "mcpServers": {
+    "dodomain": {
+      "type": "http",
+      "url": "https://app.dodomain.io/api/mcp"
+    }
+  }
+}

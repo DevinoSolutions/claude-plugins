@@ -9,6 +9,8 @@ Turn a plain-language brief into a multi-step workflow, and explain or fix exist
 
 ## Tools you will use
 
+The `sendly` server either lists these tools by name or, in Code Mode, lists only `search_tools` and `execute_typescript`. In Code Mode, call `search_tools` first, then call each tool below inside `execute_typescript` as `external_<name>` (for example `external_list_workflows`); the program must `return` its result. A tool whose scope was not granted is absent either way: not listed, and not returned by `search_tools`.
+
 - `list_workflows`, `get_workflow`: existing workflows and their full definition (trigger and steps).
 - `get_workflow_status`: whether a workflow is enabled, its step count, and its execution count.
 - `list_workflow_executions`: individual runs, to see where contacts stopped.
@@ -27,11 +29,12 @@ Turn a plain-language brief into a multi-step workflow, and explain or fix exist
 3. Call `create_workflow` (or `clone_workflow` from a similar one). Leave it disabled. Report its id and steps.
 4. For an existing workflow, call `get_workflow_status` and `get_workflow`, and describe the trigger and each step in plain words.
 5. If it is not sending: check it is enabled, call `list_events` to see whether the trigger event is arriving, and call `list_workflow_executions` to see where runs stop. Report the first cause you find.
-6. To change steps, show the before and after, then call `edit_workflow`.
+6. To change steps, show the before and after, get an explicit yes, then call `edit_workflow`.
 7. To turn a workflow on, say that it will start sending real email to every contact who triggers it from now on, get an explicit yes, then make the change.
 
 ## Rules
 
 - Never enable a workflow, or change one that is already enabled, without an explicit yes in this turn.
 - Workflows refuse a `from` address that is not on a verified domain. If that happens, offer the `deliverability-check` skill.
-- Confirm the workflow by name before `delete_workflow`. It is annotated destructive.
+- `edit_workflow`, `manage_workflow`, and `delete_workflow` are annotated destructive, and `update_workflow` can change what a live workflow sends. Call each only after an explicit yes naming the workflow.
+- Confirm the workflow by name before `delete_workflow`.

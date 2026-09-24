@@ -11,6 +11,8 @@ Give the user a clear picture of receivables: what is open, what is overdue, and
 
 The `superbooks` MCP server has two tools: `search_tools` (call it first, for example with `invoice`, to get the exact input shapes) and `execute_typescript` (run a short program calling the declared `external_*` functions; the program must `return` its result).
 
+If the connection lists the operations by name instead (the per-tool surface), call them directly without the `external_` prefix.
+
 Operations this skill uses:
 
 - `external_invoices_list`: invoices filtered by status (for example `unpaid`), with amounts and due dates.
@@ -40,5 +42,5 @@ return { open, currency: team.currency };
 ## Rules
 
 - This skill only reads. SuperBooks has no reminder operation, and `external_invoices_send` is for sending a draft, so never use it to nudge a customer about an invoice already sent.
-- Never mark an invoice paid or void it from here. Payments are recorded in the app.
+- Never mark an invoice paid or void it from here: never call `external_invoices_void` or any other write operation. Payments are recorded in the app.
 - Use the dates and amounts the operations return. State today's date when you compute days overdue.

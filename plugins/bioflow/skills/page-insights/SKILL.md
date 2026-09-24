@@ -9,6 +9,8 @@ Read the workspace's analytics, captured leads, and uploaded files, and turn the
 
 ## Tools you will use
 
+The `bioflow` server either lists these tools by name or, in Code Mode, lists only `search_tools` and `execute_typescript`. In Code Mode, call `search_tools` first, then call each tool below inside `execute_typescript` as `external_` plus the name with dots swapped for underscores (for example `external_analytics_summary` for `analytics.summary`); the program must `return` its result. A tool whose scope was not granted is absent either way: not listed, and not returned by `search_tools`.
+
 - `analytics.summary`: aggregated views, clicks, CTR, top links, referrers, and tip revenue for the workspace.
 - `contacts.list`: the leads the page has captured, with how each was captured (for example a newsletter signup or a file gate).
 - `file.list`: the files uploaded to the account.
@@ -27,4 +29,4 @@ Read the workspace's analytics, captured leads, and uploaded files, and turn the
 - Only report numbers the tools returned. If a metric is not in the response, say it is not available.
 - Do not compare against industry benchmarks; there are none in the data.
 - Contacts are personal data. Show only what the user asked for, and do not copy the full list into the chat unless they ask.
-- Do not edit or publish anything from this skill.
+- This skill only reads. Never call `page.create`, `page.update_draft`, `page.add_block`, `page.remove_block`, `page.reorder_blocks`, `page.publish`, or `page.schedule_publish` from it.

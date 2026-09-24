@@ -15,14 +15,26 @@ did not grant is never registered for the session.
 
 ## What it connects
 
-Remote MCP server `https://app.dodomain.io/api/mcp` (OAuth 2.1 with PKCE). Tools:
-`check_domain`, `list_apps`, `list_connections`, `get_connect_session`,
-`create_connect_session`, `verify_connect_session`, `reverify_connection`.
+Remote MCP server `https://app.dodomain.io/api/mcp` (OAuth 2.1 with PKCE). It reaches 7 tools,
+each registered only when you granted its scope:
+
+- Domain pre-flight (`domains:read`, reads public DNS): `check_domain`
+- Apps (`apps:read`): `list_apps`
+- Connections (`connections:read`): `list_connections`
+- Connect sessions (`sessions:read`): `get_connect_session`
+- Start and verify sessions (`sessions:write`): `create_connect_session`,
+  `verify_connect_session`
+- Recheck connections (`connections:write`): `reverify_connection`
 
 The first four only read. `create_connect_session` counts against your plan's monthly
 connection quota. Verification checks are rate limited; a repeated recheck is told how many
 seconds to wait. Secret API keys are never returned, and billing is not reachable over the
 connector.
+
+By default the server runs in Code Mode: `tools/list` shows two tools, `search_tools` and
+`execute_typescript`, and the tools above are called inside `execute_typescript` as
+`external_<name>` functions (for example `external_check_domain`) with the same scopes and gates. A
+server set to the per-tool surface lists them by name instead. The skills handle both.
 
 ## Skills
 
@@ -36,4 +48,4 @@ connector.
 
 - Docs: https://dodomain.io/docs/connecting-ai-assistants
 - Privacy: https://dodomain.io/privacy
-- Support: https://app.dodomain.io/support
+- Support: support@devino.ca

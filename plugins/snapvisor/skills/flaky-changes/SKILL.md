@@ -11,6 +11,8 @@ Silence a single known-noisy change so it stops blocking a build, undo that when
 
 The `snapvisor` MCP server has two tools: `search_tools` (find operations and their inputs; call it first, for example with `change`, `test`, `ignore`) and `execute_typescript` (run a short program calling the declared `external_*` functions, which are already in scope; the program must `return` its result).
 
+If the connection lists the operations by name instead (the per-tool surface), call them directly without the `external_` prefix.
+
 Operations this skill uses (confirm with `search_tools`):
 
 - `external_listBuildDiffs`: diffs in a build; each carries its `test` and its `change`, whose id is what the ignore operations take.

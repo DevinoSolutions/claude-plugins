@@ -26,3 +26,4 @@ If the tool list shows only `search_tools` and `execute_typescript`, the server 
 - `search_docs` searches GetItDone's developer documentation, not the user's tasks or workspace notes. For task content, use `task-deep-dive`.
 - If nothing relevant comes back, say the docs do not cover it. Do not fill the gap with guessed endpoints or fields.
 - Keep API keys and tokens out of examples. Use placeholders.
+- This skill only reads the docs. Never call `create_task`, `update_task`, `complete_task_occurrence`, `link_task_dependency`, or `archive_task` from it.

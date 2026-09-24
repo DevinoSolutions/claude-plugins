@@ -15,13 +15,25 @@ grant is never registered for the session.
 
 ## What it connects
 
-Remote MCP server `https://app.usepostify.com/api/mcp` (OAuth 2.1 with PKCE). Tools:
-`list_posts`, `get_post`, `list_channels`, `get_analytics`, `search_media_library`,
-`search_docs`, `create_draft`, `reschedule_post`, `suggest_optimal_time`, `publish_now`,
-`delete_post`.
+Remote MCP server `https://app.usepostify.com/api/mcp` (OAuth 2.1 with PKCE). It reaches 13 tools,
+each registered only when you granted its scope:
+
+- Posts and media (`posts:read`): `list_posts`, `get_post`, `get_schedule`, `search_media_library`
+- Inbox (`inbox:read`): `list_inbox_items`
+- Channels (`channels:read`): `list_channels`
+- Analytics (`analytics:read`): `get_analytics`
+- Posting times (`ai:generate`, computed from your own history, no AI credits): `suggest_optimal_time`
+- API docs (no scope): `search_docs`
+- Drafts and scheduling (`posts:write`): `create_draft`, `reschedule_post`
+- Publish and delete (`posts:write` plus the gates below): `publish_now`, `delete_post`
 
 `publish_now` and `delete_post` are gated twice: an organization setting that only a signed-in
 person can enable, and a confirmation on every call.
+
+By default the server runs in Code Mode: `tools/list` shows two tools, `search_tools` and
+`execute_typescript`, and the tools above are called inside `execute_typescript` as
+`external_<name>` functions (for example `external_list_posts`) with the same scopes and gates. A
+server set to the per-tool surface lists them by name instead. The skills handle both.
 
 ## Skills
 
@@ -35,4 +47,4 @@ person can enable, and a confirmation on every call.
 
 - Docs: https://usepostify.com/docs/connecting-ai-assistants
 - Privacy: https://usepostify.com/privacy
-- Support: support@usepostify.com
+- Support: support@devino.ca

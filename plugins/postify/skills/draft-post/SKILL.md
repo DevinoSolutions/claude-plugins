@@ -9,10 +9,12 @@ Turn the user's idea into a platform-ready draft saved in Postify. The user revi
 
 ## Tools you will use
 
-- `list_channels` — find the channel to target and its platform.
-- `search_media_library` — find an image or video the user already uploaded, when the post needs media.
-- `suggest_optimal_time` — up to three suggested posting times per platform, computed from this workspace's own publish history.
-- `create_draft` — save the post with status `draft`. Returns the new post id.
+The `postify` server either lists these tools by name or, in Code Mode, lists only `search_tools` and `execute_typescript`. In Code Mode, call `search_tools` first, then call each tool below inside `execute_typescript` as `external_<name>` (for example `external_list_channels`); the program must `return` its result. A tool whose scope was not granted is absent either way: not listed, and not returned by `search_tools`.
+
+- `list_channels`: find the channel to target and its platform.
+- `search_media_library`: find an image or video the user already uploaded, when the post needs media.
+- `suggest_optimal_time`: up to three suggested posting times per platform, computed from this workspace's own publish history.
+- `create_draft`: save the post with status `draft`. Returns the new post id.
 
 ## Workflow
 

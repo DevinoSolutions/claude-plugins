@@ -11,6 +11,8 @@ Summarize who said what on a build and act on the threads for the user. Comments
 
 The `snapvisor` MCP server has two tools: `search_tools` (call it first, for example with `comment`, to get the exact operation names and inputs) and `execute_typescript` (run a short program calling the declared `external_*` functions; the program must `return` its result).
 
+If the connection lists the operations by name instead (the per-tool surface), call them directly without the `external_` prefix.
+
 Operations this skill uses for builds (tests and media have matching `Test` and `Media` variants, such as `external_listTestComments`):
 
 - `external_listBuildComments`: all comments and threads on a build.
@@ -47,4 +49,5 @@ try {
 
 - Post comments in the user's words or in a draft they approved. Never post on their behalf without showing the text first.
 - Edit or delete only comments the user wrote, and only after a confirmation.
+- Remove a reaction or unfollow a build only after the user confirms; the server marks both operations as destructive.
 - Do not approve or reject the build from this skill; that is `build-review`.

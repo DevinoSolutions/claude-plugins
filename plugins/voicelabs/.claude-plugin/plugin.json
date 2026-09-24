@@ -1,0 +1,20 @@
+{
+  "name": "voicelabs",
+  "version": "1.0.0",
+  "description": "Turn text into speech in your VoiceLabs voices and transcribe audio to text from Claude. Wraps the VoiceLabs MCP connector with skills for reading text aloud, transcription, and managing voice profiles.",
+  "author": {
+    "name": "Devino Solutions",
+    "email": "support@devino.ca"
+  },
+  "homepage": "https://voicelabs.now/docs/connecting-ai-assistants",
+  "repository": "https://github.com/DevinoSolutions/claude-plugins",
+  "license": "MIT",
+  "keywords": ["text to speech", "tts", "transcription", "speech to text", "voice", "mcp"],
+  "skills": "./skills",
+  "mcpServers": {
+    "voicelabs": {
+      "type": "http",
+      "url": "https://app.voicelabs.now/api/mcp"
+    }
+  }
+}

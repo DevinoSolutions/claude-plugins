@@ -62,6 +62,24 @@
       "source": "./plugins/notifly",
       "description": "Read Notifly workflows, subscribers, and delivery history, and send a workflow with two-step confirmation.",
       "category": "development"
+    },
+    {
+      "name": "snapvisor",
+      "source": "./plugins/snapvisor",
+      "description": "Review visual regression builds from SnapVisor: see what changed, approve or reject, and handle flaky changes.",
+      "category": "development"
+    },
+    {
+      "name": "superbooks",
+      "source": "./plugins/superbooks",
+      "description": "Draft invoices, chase unpaid ones, categorize transactions and read financial reports from SuperBooks.",
+      "category": "productivity"
+    },
+    {
+      "name": "voicelabs",
+      "source": "./plugins/voicelabs",
+      "description": "Turn text into speech in your VoiceLabs voices and transcribe audio to text.",
+      "category": "productivity"
     }
   ]
 }

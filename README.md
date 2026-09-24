@@ -27,6 +27,9 @@ connector's tools become available. Each plugin's README lists its tools and ski
 | `unotes` | [uNotes](https://unotes.net) study notes library | `https://unotes.net/api/mcp` |
 | `uptimely` | [Uptimely](https://getuptimely.com) uptime monitoring and incidents | `https://app.getuptimely.com/api/mcp` |
 | `notifly` | [Notifly](https://notifly.io) notification workflows | `https://api.notifly.io/mcp` |
+| `snapvisor` | [SnapVisor](https://snapvisor.io) visual regression testing | `https://mcp.snapvisor.io` |
+| `superbooks` | [SuperBooks](https://superbooks.io) bookkeeping and invoices | `https://api.superbooks.io/mcp` |
+| `voicelabs` | [VoiceLabs](https://voicelabs.now) text to speech and transcription | `https://app.voicelabs.now/api/mcp` |
 
 ## Layout
 

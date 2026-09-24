@@ -46,6 +46,7 @@ see the connector docs page below or email support@devino.ca.
 | `researching-course-material` | "Find uNotes documents about virtual memory in CSI 3131", "What do past exams cover for this course?" |
 | `building-study-guides` | "Make me a study guide from this document", "Quiz me on my Operating Systems notes" |
 | `planning-revision` | "What should I revise?", "How long is my streak?", "How much quota is left?" |
+| `setup-unotes` | "Connect uNotes to Claude", "uNotes tools are missing", "Tool not found" |
 
 ## Links
 

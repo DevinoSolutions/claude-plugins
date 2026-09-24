@@ -73,6 +73,7 @@ gates. A server set to the per-tool surface lists them by name instead. The skil
 | `reviewing-email-performance` | "How did my emails do this week?", "Did anything bounce?" |
 | `checking-email-deliverability` | "Why is mail from my domain not landing?", "Clean this list before I send" |
 | `building-onboarding-workflows` | "Build a welcome series for new signups", "Why isn't my onboarding workflow running?" |
+| `setup-sendly` | "Connect Sendly to Claude", "Sendly tools are missing", "Tool not found" |
 
 ## Links
 

@@ -44,6 +44,7 @@ server set to the per-tool surface lists them by name instead. The skills handle
 | `investigating-tasks` | "Open T-123, why can't it start?", "What does the screen recording on this task show?" |
 | `capturing-tasks` | "Turn these meeting notes into tasks", "T-123 is waiting on T-120", "I did my workout yesterday" |
 | `searching-getitdone-api-docs` | "What does the 429 problem code mean in the GetItDone API?" |
+| `setup-getitdone` | "Connect GetItDone to Claude", "GetItDone tools are missing", "Tool not found" |
 
 ## Links
 

@@ -59,6 +59,7 @@ above by name, without the `external_` prefix; the skills handle both.
 | `chasing-unpaid-invoices` | "Which invoices are unpaid?", "Who owes me the most?" |
 | `cleaning-up-bookkeeping` | "Categorize last month's transactions", "Match the receipts in my inbox" |
 | `reading-financial-reports` | "How did June to September go?", "What's my runway?" |
+| `setup-superbooks` | "Connect SuperBooks to Claude", "SuperBooks tools are missing", "Tool not found" |
 
 ## Links
 

@@ -50,6 +50,7 @@ stops the next call.
 | `summarizing-sources` | "Summarize this YouTube video", "Summarize this article for me", "Turn these notes into a summary" |
 | `transcribing-media` | "Transcribe this podcast episode", "Add captions to this clip" |
 | `researching-summary-library` | "What did I summarize this week?", "Find my notes about pricing", "How much quota is left?" |
+| `setup-shorty` | "Connect Shorty to Claude", "Shorty tools are missing", "Tool not found" |
 
 ## Links
 

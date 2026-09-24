@@ -46,6 +46,7 @@ lists them by name instead. The skills handle both.
 | `editing-page-drafts` | "Add a link to my YouTube channel", "Rename my page title", "Move the newsletter block to the top" |
 | `publishing-pages` | "Publish my page", "Schedule my page to go live Monday at 9am" |
 | `analyzing-page-performance` | "How did my page do last month?", "Who signed up through my page?" |
+| `setup-bioflow` | "Connect BioFlow to Claude", "BioFlow tools are missing", "Tool not found" |
 
 ## Links
 

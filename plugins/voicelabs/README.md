@@ -40,6 +40,7 @@ preset voices. Generation is metered by your plan.
 | `reading-text-aloud` | "Read this paragraph in my Narrator voice", "Narrate these five sections" |
 | `transcribing-audio` | "Transcribe this clip", "What did I record yesterday?" |
 | `managing-voice-library` | "What voices do I have?", "Add a built-in narrator voice" |
+| `setup-voicelabs` | "Connect VoiceLabs to Claude", "VoiceLabs tools are missing", "Tool not found" |
 
 ## Links
 

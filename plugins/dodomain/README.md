@@ -43,6 +43,7 @@ server set to the per-tool surface lists them by name instead. The skills handle
 | `preflighting-domains` | "Who runs DNS for shop.acme.com?", "Can this domain do one-click connect?" |
 | `connecting-customer-domains` | "Start a connect session for shop.acme.com on my app", "Have the records landed yet?" |
 | `checking-domain-connections` | "Which of my connected domains are broken?", "Recheck the DNS on this connection" |
+| `setup-dodomain` | "Connect doDomain to Claude", "doDomain tools are missing", "Tool not found" |
 
 ## Links
 

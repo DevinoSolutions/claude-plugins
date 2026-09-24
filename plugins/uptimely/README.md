@@ -57,6 +57,7 @@ Review and revoke connected assistants under Connected AI apps in your Uptimely 
 | `responding-to-incidents` | "Declare an incident for the checkout API", "Acknowledge that alert", "Check the landing page now" |
 | `writing-postmortems` | "Write up the postmortem for yesterday's outage" |
 | `adding-uptime-monitors` | "Start monitoring https://api.example.com/health" |
+| `setup-uptimely` | "Connect Uptimely to Claude", "Uptimely tools are missing", "Tool not found" |
 
 ## Links
 

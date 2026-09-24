@@ -44,6 +44,7 @@ by name (the `operationId`, such as `listBuilds`) instead; the skills handle bot
 | `handling-flaky-changes` | "Ignore the date-widget change, it's the flaky clock again", "Which tests are flaky?" |
 | `discussing-builds` | "Summarize the comments on build 42", "Reply to the open thread and resolve it" |
 | `reporting-snapvisor-usage` | "How many builds did we run this month?", "Who is on the team?" |
+| `setup-snapvisor` | "Connect SnapVisor to Claude", "SnapVisor tools are missing", "Tool not found" |
 
 ## Links
 

@@ -49,6 +49,7 @@ Review and revoke connected assistants under Connected AI apps in your Notifly s
 | `checking-notification-delivery` | "Did the welcome email go out to dana@example.com?", "Why didn't this subscriber get the reset email?" |
 | `sending-notifications` | "Send the order-confirmation workflow to subscriber wc-1020" |
 | `reviewing-notification-workflows` | "Which workflows do we have and on which channels?", "What topics exist?" |
+| `setup-notifly` | "Connect Notifly to Claude", "Notifly tools are missing", "Tool not found" |
 
 ## Links
 

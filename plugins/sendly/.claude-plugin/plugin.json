@@ -4,7 +4,7 @@
   "description": "Run your Sendly email workspace: contacts, campaigns, workflows, deliverability, and analytics. Wraps the Sendly MCP connector with skills for confirmed campaign sends, email performance, deliverability checks, and onboarding workflows.",
   "author": {
     "name": "Devino Solutions",
-    "email": "aladdin@devino.ca"
+    "email": "support@devino.ca"
   },
   "homepage": "https://docs.sendly.now/guides/mcp",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",

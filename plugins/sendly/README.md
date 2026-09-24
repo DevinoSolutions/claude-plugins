@@ -64,4 +64,4 @@ caps. Address validation and list cleaning are metered on your Sendly plan.
 
 - Docs: https://docs.sendly.now/guides/mcp
 - Privacy: https://sendly.now/privacy
-- Support: aladdin@devino.ca
+- Support: support@devino.ca

@@ -4,7 +4,7 @@
   "description": "Review, create, and update tasks in your GetItDone workspaces. Wraps the GetItDone MCP connector with skills for workload review, task deep dives, task capture, and developer docs lookup.",
   "author": {
     "name": "Devino Solutions",
-    "email": "aladdin@devino.ca"
+    "email": "support@devino.ca"
   },
   "homepage": "https://nowgetitdone.com/docs/connecting-ai-assistants",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",

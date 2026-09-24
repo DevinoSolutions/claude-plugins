@@ -9,6 +9,8 @@ Answer developer questions from GetItDone's published documentation, with links,
 
 ## Tools you will use
 
+If the tool list shows only `search_tools` and `execute_typescript`, the server is in Code Mode: call the operation below inside `execute_typescript` as `external_search_docs`.
+
 - `search_docs`: ranked results from GetItDone's developer documentation (REST operations, error and problem codes, guide pages), each with its public URL and, for guide and error pages, a Markdown-twin URL.
 
 ## Workflow

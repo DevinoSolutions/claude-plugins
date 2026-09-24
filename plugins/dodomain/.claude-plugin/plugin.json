@@ -4,7 +4,7 @@
   "description": "Pre-flight, connect, and verify customer domains from your doDomain team. Wraps the doDomain MCP connector with skills for domain pre-flight checks, connect sessions, and connection health.",
   "author": {
     "name": "Devino Solutions",
-    "email": "aladdin@devino.ca"
+    "email": "support@devino.ca"
   },
   "homepage": "https://dodomain.io/docs/connecting-ai-assistants",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",

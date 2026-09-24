@@ -4,7 +4,7 @@
   "description": "Edit, publish, and measure your BioFlow link-in-bio pages. Wraps the BioFlow MCP connector with skills for draft editing, confirmed publishing, and page analytics and leads.",
   "author": {
     "name": "Devino Solutions",
-    "email": "aladdin@devino.ca"
+    "email": "support@devino.ca"
   },
   "homepage": "https://getbioflow.com/docs/connecting-ai-assistants",
   "repository": "https://github.com/DevinoSolutions/claude-plugins",

@@ -14,6 +14,24 @@
       "source": "./plugins/postify",
       "description": "Draft, schedule, and publish social posts from your Postify calendar.",
       "category": "productivity"
+    },
+    {
+      "name": "snapvisor",
+      "source": "./plugins/snapvisor",
+      "description": "Review visual regression builds from SnapVisor: see what changed, approve or reject, and handle flaky changes.",
+      "category": "development"
+    },
+    {
+      "name": "superbooks",
+      "source": "./plugins/superbooks",
+      "description": "Draft invoices, chase unpaid ones, categorize transactions and read financial reports from SuperBooks.",
+      "category": "productivity"
+    },
+    {
+      "name": "voicelabs",
+      "source": "./plugins/voicelabs",
+      "description": "Turn text into speech in your VoiceLabs voices and transcribe audio to text.",
+      "category": "productivity"
     }
   ]
 }

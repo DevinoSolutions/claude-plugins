@@ -19,6 +19,9 @@ connector's tools become available. Each plugin's README lists its tools and ski
 | Plugin | Product | MCP endpoint |
 |---|---|---|
 | `postify` | [Postify](https://usepostify.com) social media scheduling | `https://app.usepostify.com/api/mcp` |
+| `snapvisor` | [SnapVisor](https://snapvisor.io) visual regression testing | `https://mcp.snapvisor.io` |
+| `superbooks` | [SuperBooks](https://superbooks.io) bookkeeping and invoices | `https://api.superbooks.io/mcp` |
+| `voicelabs` | [VoiceLabs](https://voicelabs.now) text to speech and transcription | `https://app.voicelabs.now/api/mcp` |
 
 ## Layout
 

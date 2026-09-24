@@ -42,5 +42,5 @@ return { open, currency: team.currency };
 ## Rules
 
 - This skill only reads. SuperBooks has no reminder operation, and `external_invoices_send` is for sending a draft, so never use it to nudge a customer about an invoice already sent.
-- Never mark an invoice paid or void it from here. Payments are recorded in the app.
+- Never mark an invoice paid or void it from here: never call `external_invoices_void` or any other write operation. Payments are recorded in the app.
 - Use the dates and amounts the operations return. State today's date when you compute days overdue.

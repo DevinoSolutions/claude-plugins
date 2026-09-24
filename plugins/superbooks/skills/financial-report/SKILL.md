@@ -56,4 +56,4 @@ Match each report's arguments to its `search_tools` declaration. A failing call 
 
 - Only report figures the operations returned, in the team currency. If a report comes back empty for the window, say so.
 - This is bookkeeping data, not tax or legal advice. Say so if the user asks what they owe in tax.
-- This skill only reads. Nothing is changed, sent, or paid.
+- This skill only reads. Nothing is changed, sent, or paid: never call a write or destructive operation such as `external_invoices_send`, `external_transactions_update_category`, or any `*_delete` operation from it.

@@ -29,4 +29,4 @@ The `bioflow` server either lists these tools by name or, in Code Mode, lists on
 - Only report numbers the tools returned. If a metric is not in the response, say it is not available.
 - Do not compare against industry benchmarks; there are none in the data.
 - Contacts are personal data. Show only what the user asked for, and do not copy the full list into the chat unless they ask.
-- Do not edit or publish anything from this skill.
+- This skill only reads. Never call `page.create`, `page.update_draft`, `page.add_block`, `page.remove_block`, `page.reorder_blocks`, `page.publish`, or `page.schedule_publish` from it.

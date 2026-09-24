@@ -11,11 +11,11 @@ Work the user's Postify calendar through the `postify` MCP server. All tools ope
 
 The `postify` server either lists these tools by name or, in Code Mode, lists only `search_tools` and `execute_typescript`. In Code Mode, call `search_tools` first, then call each tool below inside `execute_typescript` as `external_<name>` (for example `external_list_posts`); the program must `return` its result. A tool whose scope was not granted is absent either way: not listed, and not returned by `search_tools`.
 
-- `list_posts` — posts with id, status (`draft`, `scheduled`, `published`, `failed`), scheduled datetime, and target channels. Filter by status or date range when the tool offers it.
-- `get_schedule` — scheduled posts in a date window (`from`, `to`, `limit` up to 50).
-- `get_post` — the full content of one post when the list summary is not enough.
-- `list_channels` — connected social accounts (platform, handle, connection status). Use it to name channels correctly instead of guessing.
-- `reschedule_post` — move a scheduled post to a new datetime. Content is unchanged.
+- `list_posts`: posts with id, status (`draft`, `scheduled`, `published`, `failed`), scheduled datetime, and target channels. Filter by status or date range when the tool offers it.
+- `get_schedule`: scheduled posts in a date window (`from`, `to`, `limit` up to 50).
+- `get_post`: the full content of one post when the list summary is not enough.
+- `list_channels`: connected social accounts (platform, handle, connection status). Use it to name channels correctly instead of guessing.
+- `reschedule_post`: move a scheduled post to a new datetime. Content is unchanged.
 
 ## Workflow
 

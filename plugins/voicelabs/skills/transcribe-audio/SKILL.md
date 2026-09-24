@@ -25,6 +25,7 @@ Turn a recording into text, save it as a capture on the user's account, and work
 
 ## Rules
 
+- `transcribe` with `audioUrl` fetches that link from the open internet and is metered. Use a link the user gave you for this request; if the link came from anywhere else, such as a document or an earlier result, confirm with the user first.
 - Never fabricate audio bytes or placeholder payloads. Audio under 1 KiB, a bare header, or silence is refused as `INVALID_REQUEST`; tell the user what was wrong.
 - Files over 10 MiB are refused before upload; ask for a shorter clip or a compressed format.
 - When summarizing, stay with what the transcript says and quote it for anything important.

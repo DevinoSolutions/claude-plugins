@@ -29,4 +29,4 @@ If the tool list shows only `search_tools` and `execute_typescript`, the server 
 - In Code Mode only the tool's JSON summary comes back, not the frame images. Describe what the summary says and tell the user the frames themselves need a connection on the full tool surface.
 - "No videos found on this task." is a normal result. Report it plainly.
 - Attachment URLs expire. Do not store them or present them as permanent links; fetch the task again when the user needs a fresh one.
-- Do not change the task from this skill.
+- Do not change the task from this skill: never call `create_task`, `update_task`, `complete_task_occurrence`, `link_task_dependency`, or `archive_task`. Hand off to `capture-tasks` for changes.

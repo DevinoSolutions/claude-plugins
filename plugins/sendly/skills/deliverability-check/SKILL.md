@@ -21,14 +21,15 @@ The `sendly` server either lists these tools by name or, in Code Mode, lists onl
 
 1. Call `check_domain` and report each domain's DKIM, SPF, and DMARC state.
 2. For the domain the user cares about, call `diagnose_delivery` and summarize the cause it found.
-3. If DNS records are missing, call `start_domain_setup` (or `add_domain` first for a new domain) and list the records to publish, one per line with type, name, and value.
+3. If DNS records are missing, say which domain you will set up, get a yes, then call `start_domain_setup` (or `add_domain` first for a new domain). List the records to publish, one per line with type, name, and value.
 4. After the user says the records are published, call `verify_domain` and report the result. DNS can take time to propagate; if it fails, name the records still missing.
 5. If bounces are the issue, call `list_suppressions` and show how many addresses are suppressed and why.
 6. For a list the user wants to check before sending, state the number of addresses and that validation is metered, get a yes, then call `validate_emails` or `clean_list`. Read results with `get_validation_run` and `list_validation_results`.
 
 ## Rules
 
+- Call `add_domain`, `start_domain_setup`, or `add_suppression` only after the user confirms the exact domain or address.
 - Suppressions are the consent record. Call `remove_suppression` only when the user says the address owner asked to receive mail again, and confirm the exact address first.
 - Confirm the address count before any validation or list cleaning, because it is billed per address.
 - Do not tell the user a domain is fixed until `verify_domain` or `check_domain` says so.
-- Do not send email from this skill.
+- Do not send email from this skill: never call `send_email`, `send_test_email`, `send_campaign`, or `send_mailbox_email`.

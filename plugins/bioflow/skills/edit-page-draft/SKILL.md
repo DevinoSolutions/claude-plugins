@@ -23,7 +23,7 @@ The `bioflow` server either lists these tools by name or, in Code Mode, lists on
 
 1. Call `page.list`. If the account has more than one page and the user did not name one, ask which.
 2. Call `page.get` and show the current block order in one short list so the user can refer to blocks by position or name.
-3. Restate the change in one line ("Add a link block 'YouTube' to https://youtube.com/@name at the end").
+3. Restate the change in one line ("Add a link block 'YouTube' to https://youtube.com/@name at the end"). For `page.remove_block` and `page.update_draft`, which delete or overwrite draft content, wait for the user's explicit yes before the write.
 4. Call `page.get` again right before each write and pass its fresh `expectedUpdatedAt`. Then call the write tool.
 5. After each write, report what changed in the draft and the new block id where one was returned.
 6. When the user is done, say the changes are in the draft only and offer the `publish-page` skill.

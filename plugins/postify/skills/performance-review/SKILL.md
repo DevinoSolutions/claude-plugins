@@ -1,6 +1,6 @@
 ---
 name: performance-review
-description: Report how the user's social posts performed and when to post next. Use when the user asks how last week or last month went, which channel performs best, delivery or failure rates, or the best time to post on a platform.
+description: Report how the user's social posts performed and when to post next. Use when the user asks how last week or last month went, which channel performs well, delivery or failure rates, or when to post on a platform.
 ---
 
 # Postify performance review
@@ -11,9 +11,9 @@ Read the workspace's delivery analytics and turn them into a short, honest repor
 
 The `postify` server either lists these tools by name or, in Code Mode, lists only `search_tools` and `execute_typescript`. In Code Mode, call `search_tools` first, then call each tool below inside `execute_typescript` as `external_<name>` (for example `external_get_analytics`); the program must `return` its result. A tool whose scope was not granted is absent either way: not listed, and not returned by `search_tools`.
 
-- `get_analytics` — workspace analytics for delivered posts: post counts, delivery rate, per-channel stats, for a date range.
-- `suggest_optimal_time` — suggested posting times per platform from the workspace's own publish history. No model call, no external data.
-- `list_posts` — to name the specific posts behind a number when the user asks "which ones".
+- `get_analytics`: workspace analytics for delivered posts: post counts, delivery rate, per-channel stats, for a date range.
+- `suggest_optimal_time`: suggested posting times per platform from the workspace's own publish history. No model call, no external data.
+- `list_posts`: to name the specific posts behind a number when the user asks "which ones".
 
 ## Workflow
 
@@ -27,4 +27,4 @@ The `postify` server either lists these tools by name or, in Code Mode, lists on
 
 - Only report numbers the tools returned. If a metric is missing, say it is not available in Postify analytics.
 - Do not compare the user to industry benchmarks; there are none in the data.
-- Do not schedule, publish, or delete anything from this skill.
+- This skill only reads. Never call `create_draft`, `reschedule_post`, `publish_now`, or `delete_post` from it.

@@ -30,4 +30,4 @@ The `sendly` server either lists these tools by name or, in Code Mode, lists onl
 
 - Only report numbers the tools returned. If a metric is not in the response, say it is not available.
 - Do not compare against industry benchmarks; there are none in the data.
-- Do not send, edit, or delete anything from this skill.
+- This skill only reads. Never call a send, create, update, or delete tool from it, such as `send_email`, `send_campaign`, `update_campaign`, or `delete_campaign`.

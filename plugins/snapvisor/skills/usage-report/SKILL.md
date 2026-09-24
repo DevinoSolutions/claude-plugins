@@ -44,4 +44,4 @@ If a call throws `SCOPE_MISSING` or a 403, the connection lacks that scope (memb
 ## Rules
 
 - Report only numbers the operations returned. Do not estimate costs or compare against other teams.
-- This skill only reads. Do not invite, remove, or change members from here; those changes belong in the SnapVisor app or in an explicit request the user confirms.
+- This skill only reads. Never call `external_updateAccount`, `external_setAccountMemberLevel`, `external_removeAccountMember`, `external_createAccountInvites`, or `external_cancelAccountInvite` from it. Do not invite, remove, or change members from here; those changes belong in the SnapVisor app or in an explicit request the user confirms.

@@ -25,6 +25,6 @@ Read the user's own study data and turn it into a short, actionable revision pla
 ## Rules
 
 - All four tools read only the signed-in account. No tool takes a user id; never try to read another person's data.
-- This connector cannot create decks or quizzes, record study sessions, or change the streak. Those happen in the uNotes app.
+- This connector has no write tools, so this skill never changes anything. It cannot create decks or quizzes, record study sessions, or change the streak. Those happen in the uNotes app.
 - Report only what the tools return. Do not invent scores or progress percentages; the tools do not return them.
 - Do not make plan or price recommendations from the quota data.

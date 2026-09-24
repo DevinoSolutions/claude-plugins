@@ -25,6 +25,6 @@ The `dodomain` server either lists these tools by name or, in Code Mode, lists o
 
 ## Rules
 
-- Never call `create_connect_session` from this skill. Pre-flight is read only.
+- Never call `create_connect_session`, `verify_connect_session`, or `reverify_connection` from this skill. Pre-flight is read only.
 - Results come from the live DNS system and can change between calls. Say so if the user compares two runs.
 - Only report fields the tool returned. If detection confidence is low, say so instead of presenting the provider as certain.

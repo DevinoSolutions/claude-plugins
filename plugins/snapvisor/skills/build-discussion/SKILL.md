@@ -49,4 +49,5 @@ try {
 
 - Post comments in the user's words or in a draft they approved. Never post on their behalf without showing the text first.
 - Edit or delete only comments the user wrote, and only after a confirmation.
+- Remove a reaction or unfollow a build only after the user confirms; the server marks both operations as destructive.
 - Do not approve or reject the build from this skill; that is `build-review`.

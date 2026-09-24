@@ -31,7 +31,7 @@ If the tool list shows only `search_tools` and `execute_typescript`, the server 
 
 ## Rules
 
-- Do not create, update, or archive anything from this skill. Hand off to `capture-tasks` for changes.
+- Do not change anything from this skill: never call `create_task`, `update_task`, `complete_task_occurrence`, `link_task_dependency`, or `archive_task`. Hand off to `capture-tasks` for changes.
 - Refer to tasks by short id and name so the user can find them in the app.
 - If a project the user named is not in `list_projects`, say it does not exist. Do not guess another one.
 - If a workspace id the user gave is not one of theirs, say so and offer `list_workspaces`.

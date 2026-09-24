@@ -10,6 +10,8 @@ flaky changes, and run the review discussion.
 /plugin install snapvisor@devino
 ```
 
+Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-snapvisor`, or the connector alone through a custom connector (Connectors Directory listing pending). See the [repository README](../../README.md#install) for each path.
+
 Then ask Claude about your builds. On the first tool call Claude opens the SnapVisor consent
 screen; choose the accounts the connection covers and narrow the scopes if you do not want write
 or admin access. MCP access is part of the SnapVisor Pro plan. On the Free plan only `getMe`

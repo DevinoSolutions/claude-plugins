@@ -9,6 +9,8 @@ Summarize and transcribe videos, audio, documents, and web pages, and read your 
 /plugin install shorty@devino
 ```
 
+Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-shorty`, or the connector alone through the [Connectors Directory listing](https://claude.ai/directory/connectors/shorty). See the [repository README](../../README.md#install) for each path.
+
 Then ask Claude about your summaries or give it a link. On the first tool call Claude opens the
 Shorty sign-in page; pick the scopes you want on the consent screen. A tool whose scope you did
 not grant is never registered for the session.

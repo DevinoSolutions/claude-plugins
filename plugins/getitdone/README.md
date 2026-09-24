@@ -9,6 +9,8 @@ Review, create, and update tasks in your GetItDone workspaces.
 /plugin install getitdone@devino
 ```
 
+Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-getitdone`, or the connector alone through the [Connectors Directory listing](https://claude.ai/directory/connectors/getitdone). See the [repository README](../../README.md#install) for each path.
+
 Then ask Claude about your tasks. On the first tool call Claude opens the GetItDone sign-in
 page; pick the scopes you want on the consent screen (`workspaces:read`, `projects:read`,
 `tasks:read`, `tasks:write`). An operation whose scope you did not grant is never reachable

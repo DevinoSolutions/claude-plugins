@@ -9,6 +9,8 @@ Edit, publish, and measure your BioFlow link-in-bio pages.
 /plugin install bioflow@devino
 ```
 
+Other ways in: the Claude plugin directory and the `anthropics/claude-plugins-community` marketplace once approved, skills only with `npx skills add DevinoSolutions/claude-plugins --skill setup-bioflow`, or the connector alone through the [Connectors Directory listing](https://claude.ai/directory/connectors/bioflow). See the [repository README](../../README.md#install) for each path.
+
 Then ask Claude about your page. On the first tool call Claude opens the BioFlow sign-in page;
 pick the scopes you want on the consent screen. A tool whose scope you did not grant is never
 registered for the session.

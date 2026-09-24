@@ -1,0 +1,40 @@
+---
+name: status-check
+description: Report the current health of an Uptimely project and its recent history. Use when the user asks if anything is down, what incidents or alerts are open, how a monitor has performed over a period, who is on call, whether maintenance is scheduled, or which status pages and telemetry services exist. Read-only; never declares, changes, or probes anything.
+---
+
+# Uptimely status check
+
+Answer "is anything wrong, and who is handling it" for one Uptimely project from live data.
+
+## Tools you will use
+
+- `uptimely_project_overview`: monitor, incident, alert, and status page counts plus the project's overall health.
+- `uptimely_monitor_list`: every monitor with its current status.
+- `uptimely_monitor_get`: one monitor's configuration.
+- `uptimely_monitor_status_history`: a monitor's recorded status transitions with durations over a window.
+- `uptimely_monitor_target_list`: the targets a monitor checks.
+- `uptimely_incident_list`: incidents, optionally only active ones (`activeOnly`).
+- `uptimely_incident_get`: one incident with state, severity, root cause, notes, and state timeline.
+- `uptimely_alert_list`: alerts and their states.
+- `uptimely_on_call_current`: who is on call now and who is next, per schedule.
+- `uptimely_maintenance_list`: scheduled and past maintenance windows.
+- `uptimely_status_page_list`: the project's status pages.
+- `uptimely_telemetry_service_list`: the project's telemetry services.
+
+## Workflow
+
+1. Get the `projectId`. Every tool needs it. If the user has not given one in this conversation, ask for it; there is no tool here that lists projects. Reuse it for every later call.
+2. Call `uptimely_project_overview`. Lead with the overall health in one line.
+3. If anything is not healthy, call `uptimely_monitor_list` and name the monitors that are down or degraded, then `uptimely_incident_list` with `activeOnly: true` and `uptimely_alert_list`, and name the open incidents and active alerts with their state and severity.
+4. Call `uptimely_on_call_current` and say who is on call now and who is next.
+5. Call `uptimely_maintenance_list` and mention any window that is in progress or coming up soon, since it can explain a down monitor.
+6. For a history question ("how did X do this week"), find the monitor in `uptimely_monitor_list`, then call `uptimely_monitor_status_history` for the window. Report total downtime, the number of outages, and the longest one.
+7. Offer next steps that match what you found: the `incident-response` skill for an unhandled outage, or the `postmortem` skill for a resolved one.
+
+## Rules
+
+- Never call a write tool from this skill: `uptimely_monitor_create`, `uptimely_run_monitor_probe`, `uptimely_incident_declare`, `uptimely_incident_state_change`, `uptimely_incident_postmortem_save`, `uptimely_alert_create`, or `uptimely_alert_state_change`.
+- `PROJECT_ACCESS_DENIED` means the id is wrong or the account is not a member. Ask the user to check the project id; do not guess another one.
+- Report times in the user's timezone and say which one you used.
+- Report only what the tools return. Do not estimate uptime percentages the data does not contain.

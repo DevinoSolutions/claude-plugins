@@ -25,7 +25,7 @@ If the connection lists the operations by name instead (the per-tool surface), c
 Operations this skill uses for builds (tests and media have matching `Test` and `Media` variants, such as `external_listTestComments`):
 
 - `external_listBuildComments`: all comments and threads on a build.
-- `external_createBuildComment`: post a comment; pass `threadId` to reply, or `screenshotDiffId` to attach it to one screenshot.
+- `external_createBuildComment`: post a comment; set `threadId` to reply, or `screenshotDiffId` to attach it to one screenshot.
 - `external_updateBuildComment` and `external_deleteBuildComment`: edit or delete the user's own comment.
 - `external_addBuildCommentReaction` and `external_removeBuildCommentReaction`: reactions.
 - `external_resolveBuildCommentThread` and `external_unresolveBuildCommentThread`: close or reopen a thread.

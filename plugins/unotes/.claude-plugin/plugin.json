@@ -1,7 +1,7 @@
 {
   "name": "unotes",
   "displayName": "uNotes",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Study from Claude with uNotes, read-only: find course notes, past exams, and lab reports in the uNotes library, turn documents into study guides and practice questions, and plan revision from your flashcards, quizzes, and streak.",
   "author": {
     "name": "Devino Solutions",

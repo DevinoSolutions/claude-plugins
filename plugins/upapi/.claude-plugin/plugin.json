@@ -1,0 +1,40 @@
+{
+  "name": "upapi",
+  "displayName": "upAPI",
+  "version": "1.0.0",
+  "description": "Turn web pages, PDFs, images, and recordings into usable text from Claude with upAPI: convert pages to Markdown, take screenshots, render PDFs, extract PDF text, OCR images, and transcribe audio and video links.",
+  "author": {
+    "name": "Devino Solutions",
+    "email": "support@devino.ca",
+    "url": "https://devino.ca"
+  },
+  "homepage": "https://upapi.io/docs/mcp-clients",
+  "repository": "https://github.com/DevinoSolutions/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "upapi",
+    "up api",
+    "upapi.io",
+    "web page to markdown",
+    "url to markdown",
+    "website screenshot",
+    "html to pdf",
+    "save page as pdf",
+    "pdf to text",
+    "extract pdf text",
+    "ocr",
+    "image to text",
+    "transcribe audio",
+    "transcribe video",
+    "speech to text",
+    "word count",
+    "mcp"
+  ],
+  "skills": "./skills",
+  "mcpServers": {
+    "upapi": {
+      "type": "http",
+      "url": "https://app.upapi.io/api/mcp?tools=claude"
+    }
+  }
+}

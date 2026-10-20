@@ -14,7 +14,8 @@ OAuth on first use; you choose the scopes on the product's consent screen.
 On paid plans (Pro, Max, Team, Enterprise), open **Customize > Plugins > Discover**, search for
 the product name, and install it. Ten plugins were submitted to the Claude plugin directory on
 2026-09-24 and appear there once Anthropic approves them; SuperBooks and VoiceLabs are not
-submitted yet.
+submitted yet. upAPI and Caly were added to this repository on 2026-10-20 and are not submitted
+yet.
 
 ### 2. Claude Code: community marketplace
 
@@ -27,7 +28,7 @@ Approved plugins are mirrored into Anthropic's community marketplace, which you 
 
 ### 3. Claude Code: straight from this repository
 
-Works today for all twelve plugins:
+Works today for all fourteen plugins:
 
 ```
 /plugin marketplace add DevinoSolutions/claude-plugins
@@ -75,15 +76,19 @@ available in Claude Code when you sign in with the same account.
 | [SnapVisor](https://snapvisor.io/docs/agents/mcp-server) | [claude.ai/directory/connectors/snapvisor](https://claude.ai/directory/connectors/snapvisor) | `https://mcp.snapvisor.io` | `snapvisor` | `discussing-builds`, `handling-flaky-changes`, `reporting-snapvisor-usage`, `reviewing-visual-builds`, `setup-snapvisor` |
 | [SuperBooks](https://docs.superbooks.io/mcp) | [claude.ai/directory/connectors/superbooks](https://claude.ai/directory/connectors/superbooks) | `https://api.superbooks.io/mcp` | `superbooks` | `chasing-unpaid-invoices`, `cleaning-up-bookkeeping`, `drafting-invoices`, `reading-financial-reports`, `setup-superbooks` |
 | [VoiceLabs](https://voicelabs.now/docs/connecting-ai-assistants) | pending | `https://app.voicelabs.now/api/mcp` | `voicelabs` | `managing-voice-library`, `reading-text-aloud`, `transcribing-audio`, `setup-voicelabs` |
+| [upAPI](https://upapi.io/docs/mcp-clients) | pending | `https://app.upapi.io/api/mcp?tools=claude` | `upapi` | `capturing-web-pages`, `extracting-document-text`, `reading-web-pages`, `transcribing-recordings`, `setup-upapi` |
+| [Caly](https://trycaly.com/agent-setup/) | [claude.ai/directory/3d0909e9-…](https://claude.ai/directory/3d0909e9-bcc0-425e-84ad-78306332dd7b) | `https://mcp.trycaly.com/mcp` | `caly` | `booking-meetings`, `finding-meeting-times`, `managing-bookings`, `setup-caly` |
 
-The directory links follow Anthropic's permanent listing format and the published slugs.
-VoiceLabs is not listed yet, so it uses a custom connector for now.
+The directory links follow Anthropic's permanent listing format and the published slugs; Caly's
+link is the listing id from Anthropic's directory feed. VoiceLabs and upAPI are not listed yet,
+so they use a custom connector for now.
 
 ## Tool surfaces
 
 Most servers default to Code Mode: `tools/list` shows only `search_tools` and
 `execute_typescript`, and each product tool is called inside the sandbox as `external_<tool>`
-with the same scopes and gates. uNotes lists its tools by name, and VoiceLabs lists both. Every
+with the same scopes and gates. uNotes lists its tools by name, VoiceLabs lists both, and upAPI's
+Claude table (`?tools=claude`) lists its tools by name. Every
 skill names tools as `<server>:<tool>` and covers both surfaces, including what to do on
 "Tool not found".
 

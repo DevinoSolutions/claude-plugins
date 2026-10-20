@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Claude plugins for Devino Solutions products. Each plugin wraps the product's remote MCP connector with workflow skills.",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "plugins": [
     {
@@ -382,6 +382,72 @@
         "mcp"
       ],
       "homepage": "https://voicelabs.now/docs/connecting-ai-assistants"
+    },
+    {
+      "name": "upapi",
+      "source": "./plugins/upapi",
+      "displayName": "upAPI",
+      "description": "Turn web pages, PDFs, images, and recordings into usable text from Claude with upAPI: convert pages to Markdown, take screenshots, render PDFs, extract PDF text, OCR images, and transcribe audio and video links.",
+      "category": "development",
+      "tags": [
+        "web-scraping",
+        "pdf",
+        "ocr",
+        "transcription",
+        "mcp"
+      ],
+      "keywords": [
+        "upapi",
+        "up api",
+        "upapi.io",
+        "web page to markdown",
+        "url to markdown",
+        "website screenshot",
+        "html to pdf",
+        "save page as pdf",
+        "pdf to text",
+        "extract pdf text",
+        "ocr",
+        "image to text",
+        "transcribe audio",
+        "transcribe video",
+        "speech to text",
+        "word count",
+        "mcp"
+      ],
+      "homepage": "https://upapi.io/docs/mcp-clients"
+    },
+    {
+      "name": "caly",
+      "source": "./plugins/caly",
+      "displayName": "Caly",
+      "description": "Schedule meetings from Claude with Caly: find open times on your event types, book calls with the right time zone, and review, reschedule, or cancel bookings after you confirm.",
+      "category": "productivity",
+      "tags": [
+        "scheduling",
+        "calendar",
+        "meetings",
+        "mcp"
+      ],
+      "keywords": [
+        "caly",
+        "cally",
+        "calley",
+        "scheduling",
+        "meeting scheduler",
+        "book a meeting",
+        "schedule a call",
+        "when am i free",
+        "find a time",
+        "availability",
+        "booking link",
+        "reschedule meeting",
+        "cancel meeting",
+        "calendar",
+        "meeting booking",
+        "mcp"
+      ],
+      "homepage": "https://trycaly.com"
     }
   ]
 }

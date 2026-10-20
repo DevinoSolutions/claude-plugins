@@ -53,7 +53,7 @@ Review and revoke connected assistants under Settings > Connected apps in the up
 
 | Skill | Use it when |
 |---|---|
-| `reading-web-pages` | "Read this article and summarize it", "Turn https://example.com/docs into Markdown" |
+| `reading-web-pages` | "Read this article and summarize it", "Turn https://example.com/blog/launch-post into Markdown" |
 | `capturing-web-pages` | "Take a screenshot of our pricing page", "Save this page as a PDF", "Render this HTML invoice to PDF" |
 | `extracting-document-text` | "Pull the text out of this PDF", "What does this receipt say?", "Count the words in this draft" |
 | `transcribing-recordings` | "Transcribe this podcast episode", "What was said in this video?" |

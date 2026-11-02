@@ -15,7 +15,7 @@ On paid plans (Pro, Max, Team, Enterprise), open **Customize > Plugins > Discove
 the product name, and install it. Ten plugins were submitted to the Claude plugin directory on
 2026-09-24 and appear there once Anthropic approves them; SuperBooks and VoiceLabs are not
 submitted yet. upAPI and Caly were added to this repository on 2026-10-20 and are not submitted
-yet.
+yet. Demofy was added on 2026-11-02 and is not submitted yet.
 
 ### 2. Claude Code: community marketplace
 
@@ -28,7 +28,7 @@ Approved plugins are mirrored into Anthropic's community marketplace, which you 
 
 ### 3. Claude Code: straight from this repository
 
-Works today for all fourteen plugins:
+Works today for all fifteen plugins:
 
 ```
 /plugin marketplace add DevinoSolutions/claude-plugins
@@ -78,10 +78,11 @@ available in Claude Code when you sign in with the same account.
 | [VoiceLabs](https://voicelabs.now/docs/connecting-ai-assistants) | pending | `https://app.voicelabs.now/api/mcp` | `voicelabs` | `managing-voice-library`, `reading-text-aloud`, `transcribing-audio`, `setup-voicelabs` |
 | [upAPI](https://upapi.io/docs/mcp-clients) | pending | `https://app.upapi.io/api/mcp?tools=claude` | `upapi` | `capturing-web-pages`, `extracting-document-text`, `reading-web-pages`, `transcribing-recordings`, `setup-upapi` |
 | [Caly](https://trycaly.com/agent-setup/) | [claude.ai/directory/3d0909e9-…](https://claude.ai/directory/3d0909e9-bcc0-425e-84ad-78306332dd7b) | `https://mcp.trycaly.com/mcp` | `caly` | `booking-meetings`, `finding-meeting-times`, `managing-bookings`, `setup-caly` |
+| [Demofy](https://demofy.io/docs/mcp) | pending | `https://app.demofy.io/api/mcp` | `demofy` | `editing-demos`, `making-demo-videos`, `managing-demos`, `setup-demofy` |
 
 The directory links follow Anthropic's permanent listing format and the published slugs; Caly's
-link is the listing id from Anthropic's directory feed. VoiceLabs and upAPI are not listed yet,
-so they use a custom connector for now.
+link is the listing id from Anthropic's directory feed. VoiceLabs, upAPI and Demofy are not listed
+yet, so they use a custom connector for now.
 
 ## Tool surfaces
 

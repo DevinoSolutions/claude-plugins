@@ -1,0 +1,39 @@
+{
+  "name": "demofy",
+  "displayName": "Demofy",
+  "version": "1.0.0",
+  "description": "Make narrated product demo videos from Claude with Demofy: turn a web address and a sentence of intent into a demo, follow it until the video is ready, share it, edit its script and look, and keep your demos in projects.",
+  "author": {
+    "name": "Devino Solutions",
+    "email": "support@devino.ca",
+    "url": "https://devino.ca"
+  },
+  "homepage": "https://demofy.io/docs/mcp",
+  "repository": "https://github.com/DevinoSolutions/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "demofy",
+    "demofi",
+    "demo fy",
+    "product demo",
+    "demo video",
+    "make a demo video",
+    "product walkthrough",
+    "screen recording",
+    "website recording",
+    "narrated video",
+    "voiceover",
+    "explainer video",
+    "saas demo",
+    "share demo link",
+    "video editing",
+    "mcp"
+  ],
+  "skills": "./skills",
+  "mcpServers": {
+    "demofy": {
+      "type": "http",
+      "url": "https://app.demofy.io/api/mcp"
+    }
+  }
+}

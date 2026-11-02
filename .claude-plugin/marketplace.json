@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Claude plugins for Devino Solutions products. Each plugin wraps the product's remote MCP connector with workflow skills.",
-    "version": "1.2.0"
+    "version": "1.3.0"
   },
   "plugins": [
     {
@@ -448,6 +448,38 @@
         "mcp"
       ],
       "homepage": "https://trycaly.com"
+    },
+    {
+      "name": "demofy",
+      "source": "./plugins/demofy",
+      "displayName": "Demofy",
+      "description": "Make narrated product demo videos from Claude with Demofy: turn a web address and a sentence of intent into a demo, follow it until the video is ready, share it, edit its script and look, and keep your demos in projects.",
+      "category": "productivity",
+      "tags": [
+        "video",
+        "product-demos",
+        "marketing",
+        "mcp"
+      ],
+      "keywords": [
+        "demofy",
+        "demofi",
+        "demo fy",
+        "product demo",
+        "demo video",
+        "make a demo video",
+        "product walkthrough",
+        "screen recording",
+        "website recording",
+        "narrated video",
+        "voiceover",
+        "explainer video",
+        "saas demo",
+        "share demo link",
+        "video editing",
+        "mcp"
+      ],
+      "homepage": "https://demofy.io/docs/mcp"
     }
   ]
 }

@@ -8,7 +8,7 @@ description: "Connects the SuperBooks MCP server to Claude and verifies it with 
 Connect the SuperBooks MCP server, confirm it answers, and fix the usual reasons a SuperBooks tool is missing. Sign-in and consent always happen in SuperBooks's own browser page, never in the chat.
 
 - MCP server key: `superbooks` (tools are written `superbooks:<tool>`)
-- MCP server URL: `https://api.superbooks.io/mcp` (streamable HTTP, OAuth 2.1 with PKCE)
+- MCP server URL: `https://app.superbooks.io/mcp` (streamable HTTP, OAuth 2.1 with PKCE)
 - Docs: https://docs.superbooks.io/mcp
 
 ## Where to connect
@@ -16,7 +16,7 @@ Connect the SuperBooks MCP server, confirm it answers, and fix the usual reasons
 ### Claude Code with this plugin
 
 1. The plugin already registers the `superbooks` server. Run `/mcp`, pick the SuperBooks server, and choose **Authenticate**, or just ask a SuperBooks question and follow the sign-in link Claude opens.
-2. Without the plugin, add the server by hand: `claude mcp add --transport http superbooks https://api.superbooks.io/mcp`, then authenticate from `/mcp`.
+2. Without the plugin, add the server by hand: `claude mcp add --transport http superbooks https://app.superbooks.io/mcp`, then authenticate from `/mcp`.
 3. A connector added on claude.ai is also available in Claude Code when you are signed in with the same claude.ai account, so there is no need to connect twice.
 
 ### claude.ai, Claude Desktop, and Cowork

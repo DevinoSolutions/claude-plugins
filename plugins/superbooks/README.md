@@ -18,7 +18,7 @@ grant is never reachable. Works on every SuperBooks plan.
 
 ## What it connects
 
-Remote MCP server `https://api.superbooks.io/mcp` (OAuth 2.1 with PKCE and dynamic client
+Remote MCP server `https://app.superbooks.io/mcp` (OAuth 2.1 with PKCE and dynamic client
 registration). The server exposes two tools:
 
 - `search_tools`: lists the SuperBooks operations this connection can reach, as TypeScript

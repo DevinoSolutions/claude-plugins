@@ -33,7 +33,7 @@
   "mcpServers": {
     "superbooks": {
       "type": "http",
-      "url": "https://api.superbooks.io/mcp"
+      "url": "https://app.superbooks.io/mcp"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "sendly",
   "displayName": "Sendly",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Run email from Claude with Sendly: draft and send campaigns after confirming the recipient count, report opens and bounces, fix deliverability and DKIM, SPF, and DMARC records, and build onboarding workflows.",
   "author": {
     "name": "Devino Solutions",

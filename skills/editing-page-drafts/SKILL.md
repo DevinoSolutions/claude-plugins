@@ -24,7 +24,7 @@ Every tool in this skill comes from the `bioflow` MCP server, the BioFlow connec
 - `bioflow:page.create`: create a new page.
 - `bioflow:page.update_draft`: change page-level fields on the draft, such as the title.
 - `bioflow:page.add_block`: append a block to the draft. Returns the new block id.
-- `bioflow:page.remove_block`: remove named blocks from the draft. It refuses full-page clears.
+- `bioflow:page.remove_block`: remove a block an AI assistant added that the person has not changed, confirmed, restored, published or A/B-tested since. Any other block is refused with `FORBIDDEN`, and so is a full-page clear.
 - `bioflow:page.reorder_blocks`: change the order of the draft's blocks.
 
 ## Workflow
@@ -41,5 +41,6 @@ Every tool in this skill comes from the `bioflow` MCP server, the BioFlow connec
 - Never call `bioflow:page.publish` or `bioflow:page.schedule_publish` from this skill.
 - On `STALE_SNAPSHOT`, nothing was written. Call `bioflow:page.get`, show the user what changed, and repeat the write only if it still makes sense.
 - Do not invent URLs, product details, or handles. Ask for the link when a block needs one.
-- To empty a page, remove blocks by name one at a time after the user confirms the list. There is no clear-all operation.
+- Offer to remove only a block an AI assistant added that the person has not touched since. For any other block, and to empty a page, do not call `bioflow:page.remove_block`: ask the person to remove or hide it in the BioFlow editor. Removing it there deletes it with its form replies and A/B experiments, which is why only the person can.
+- On `FORBIDDEN` from `bioflow:page.remove_block`, nothing was removed. Say so and point the person to the BioFlow editor; do not retry.
 - If the write tools are missing, the user did not grant the page write scope. Say so and tell them to reconnect with it.
